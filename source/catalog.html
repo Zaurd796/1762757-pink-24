@@ -73,29 +73,27 @@
   </header>
   <main>
     <section class="catalog">
-      <div class="catalog-intro">
+      <div class="first">
         <div class="container">
-          <h1 class="title catalog-intro__title">
+          <h1 class="title first__title">
             Фотографии пользователей
           </h1>
         </div>
       </div>
       <div class="catalog-box">
         <div class="container">
-          <p class="catalog__subtitle">
+          <p class="subtitle catalog__subtitle">
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
           </p>
         </div>
-        <div class="catalog__hero">
+        <blockquote class="catalog__blockquote">
+          <a class="catalog__item-link" href="#!">
+            <img class="catalog__item-img" src="img/panorama.jpg" width="1200" height="506"
+              alt="вид с птичьего полёта на ущелье с лесом и на подвесной мост">
+          </a>
           <div class="container">
-            <div class="catalog__hero-inner">
-              <button class="button catalog__hero-button" type="button">ПАНОРАМА ДНЯ</button>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <blockquote class="catalog__blockquote">
+            <p class="button catalog__hero-button">ПАНОРАМА ДНЯ</p>
             <div class="catalog__blockquote-wrapper">
               <div class="catalog__blockquote-author-box">
                 <cite class="catalog__blockquote-author">Анна</cite>
@@ -114,7 +112,9 @@
             <p class="catalog__blockquote-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
               трансляцию в перископе, задавайте свои вопросы!
             </p>
-          </blockquote>
+          </div>
+        </blockquote>
+        <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item">
               <blockquote class="catalog__blockquote">
@@ -270,7 +270,7 @@
           <div class="upload__img-box">
             <img class="upload__img" src="img/catalog-7.jpg" width="300" height="400" alt="дорога через лес">
           </div>
-          <form class="upload__form" action="#" method="post">
+          <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
             <ul class="upload__list">
               <li class="upload__item">
                 <button class="upload__item-button upload__item-button_active" type="button">

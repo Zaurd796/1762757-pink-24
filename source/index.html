@@ -167,62 +167,64 @@
     <section class="reviews">
       <div class="container">
         <h2 class="visually-hidden">Отзывы наших покупателей</h2>
-        <ul class="reviews__slider">
-          <li class="reviews__slider-item">
-            <blockquote class="reviews__blockquote">
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!»
-              </p>
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </blockquote>
-          </li>
-          <li class="reviews__slider-item">
-            <blockquote class="reviews__blockquote">
-              <p class="reviews__text">
-                «Приложение нравится, т. к могу использовать его без интернета если вдруг нет его под рукой. Чаще,
-                конечно, с мобильным интернетом. Но всякое бывает.»
-              </p>
-              <cite class="reviews__author">Петр Николаев</cite>
-              <p class="reviews__author-info">27лет, инженер</p>
-            </blockquote>
-          </li>
-          <li class="reviews__slider-item">
-            <blockquote class="reviews__blockquote">
-              <p class="reviews__text">
-                «Данным приложением пользуюсь много лет, само приложение не плохое, отлично работает везде и проблем с
-                ним никогда не возникало.»
-              </p>
-              <cite class="reviews__author">Иван Сидоров</cite>
-              <p class="reviews__author-info">юрист, 35лет</p>
-            </blockquote>
-          </li>
-        </ul>
-        <button class="reviews__arrow reviews__arrow--left" type="button">
-          <span class="visually-hidden">кнопка прокручивающая слайдер налево</span>
-        </button>
-        <button class="reviews__arrow reviews__arrow--right" type="button">
-          <span class="visually-hidden">кнопка прокручивающая слайдер направо</span>
-        </button>
-        <div class="reviews__slider-dots">
-          <button class="reviews__slider-dot reviews__slider-dot--active" type="button">
-            <span class="visually-hidden">кнопка показывающая активный слайд</span>
+        <div class="slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item slider__item--active">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                  привычные серые вещи! А еще я познакомился со своей будущей женой в
+                  комментариях к выложенной фотографии!»
+                </p>
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  «Приложение нравится, т. к могу использовать его без интернета если вдруг нет его под рукой. Чаще,
+                  конечно, с мобильным интернетом. Но всякое бывает.»
+                </p>
+                <cite class="reviews__author">Петр Николаев</cite>
+                <p class="reviews__author-info">27лет, инженер</p>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  «Данным приложением пользуюсь много лет, само приложение не плохое, отлично работает везде и проблем с
+                  ним никогда не возникало.»
+                </p>
+                <cite class="reviews__author">Иван Сидоров</cite>
+                <p class="reviews__author-info">юрист, 35лет</p>
+              </blockquote>
+            </li>
+          </ul>
+          <button class="reviews__arrow reviews__arrow--left" type="button">
+            <span class="visually-hidden">кнопка прокручивающая слайдер налево</span>
           </button>
-          <button class="reviews__slider-dot" type="button">
-            <span class="visually-hidden">кнопка показывающая активный слайд</span>
+          <button class="reviews__arrow reviews__arrow--right" type="button">
+            <span class="visually-hidden">кнопка прокручивающая слайдер направо</span>
           </button>
-          <button class="reviews__slider-dot" type="button">
-            <span class="visually-hidden">кнопка показывающая активный слайд</span>
-          </button>
+          <div class="slider__dots">
+            <button class="slider__dot slider__dot--active" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
+            <button class="slider__dot" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
+            <button class="slider__dot" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="price">
       <div class="container">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="price__slider-box">
+        <!-- <div class="price__slider-box">
           <ul class="price__slider-list">
             <li class="price__slider-item">
               <div class="price__slider-heading">
@@ -253,74 +255,76 @@
               <p class="price__slider-descr price__slider-descr--yes">Комментарии</p>
             </li>
           </ul>
-          <div class="price__slider-dots">
-            <button class="price__slider-dot" type="button">
-              <span class="visually-hidden">кнопка показывающая активный слайд</span>
-            </button>
-            <button class="price__slider-dot price__slider-dot--active" type="button">
-              <span class="visually-hidden">кнопка показывающая активный слайд</span>
-            </button>
-            <button class="price__slider-dot" type="button">
-              <span class="visually-hidden">кнопка показывающая активный слайд</span>
-            </button>
-          </div>
-        </div>
-        <div class="price__table">
-          <div class="price__table-head">
-            <div class="price__table-row">
-              <div class="price__table-cell"></div>
-              <div class="price__table-cell">
-                <p class="price__table-descr">База</p>
-                <p class="price__table-price">1,99 USD</p>
+        </div> -->
+        <div class="slider">
+          <div class="price__table slider__list">
+            <div class="price__table-head">
+              <div class="price__table-row">
+                <div class="price__table-cell"></div>
+                <div class="price__table-cell">
+                  <p class="price__table-descr">База</p>
+                  <p class="price__table-price">1,99 USD</p>
+                </div>
+                <div class="price__table-cell">
+                  <p class="price__table-descr">СТАНДАРТ</p>
+                  <p class="price__table-price">3,99 USD</p>
+                  <p class="price__table-popular">ХИТ</p>
+                </div>
+                <div class="price__table-cell">
+                  <p class="price__table-descr">АНЛИМ</p>
+                  <p class="price__table-price">9,99 USD</p>
+                </div>
               </div>
-              <div class="price__table-cell">
-                <p class="price__table-descr">СТАНДАРТ</p>
-                <p class="price__table-price">3,99 USD</p>
-                <p class="price__table-popular">ХИТ</p>
+            </div>
+            <div class="price__table-body">
+              <div class="price__table-row">
+                <div class="price__table-cell">Розовый фильтр</div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
               </div>
-              <div class="price__table-cell">
-                <p class="price__table-descr">АНЛИМ</p>
-                <p class="price__table-price">9,99 USD</p>
+              <div class="price__table-row">
+                <div class="price__table-cell">Смайлики</div>
+                <div class="price__table-cell price__table-cell--no">
+                  <span class="visually-hidden">no</span>
+                </div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
+              </div>
+              <div class="price__table-row">
+                <div class="price__table-cell">Комментарии</div>
+                <div class="price__table-cell price__table-cell--no">
+                  <span class="visually-hidden">no</span>
+                </div>
+                <div class="price__table-cell price__table-cell--no">
+                  <span class="visually-hidden">no</span>
+                </div>
+                <div class="price__table-cell price__table-cell--yes">
+                  <span class="visually-hidden">yes</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="price__table-body">
-            <div class="price__table-row">
-              <div class="price__table-cell">Розовый фильтр</div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-            </div>
-            <div class="price__table-row">
-              <div class="price__table-cell">Смайлики</div>
-              <div class="price__table-cell price__table-cell--no">
-                <span class="visually-hidden">no</span>
-              </div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-            </div>
-            <div class="price__table-row">
-              <div class="price__table-cell">Комментарии</div>
-              <div class="price__table-cell price__table-cell--no">
-                <span class="visually-hidden">no</span>
-              </div>
-              <div class="price__table-cell price__table-cell--no">
-                <span class="visually-hidden">no</span>
-              </div>
-              <div class="price__table-cell price__table-cell--yes">
-                <span class="visually-hidden">yes</span>
-              </div>
-            </div>
+          <div class="slider__dots">
+            <button class="slider__dot" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
+            <button class="slider__dot slider__dot--active" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
+            <button class="slider__dot" type="button">
+              <span class="visually-hidden">кнопка показывающая активный слайд</span>
+            </button>
           </div>
         </div>
       </div>
