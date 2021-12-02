@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+// global
+
+@import "global/var";
+@import "global/fonts";
+@import "global/global";
+
+// components
+
+@import "components/visually-hidden";
+@import "components/container";
+@import "components/logo";
+@import "components/title";
+@import "components/block-title";
+@import "components/store-links";
+@import "components/socials";
+@import "components/button";
+@import "components/header";
+@import "components/nav-list";
+@import "components/intro";
+@import "components/info";
+@import "components/slider";
+@import "components/reviews";
+@import "components/price";
+@import "components/contacts";
+@import "components/footer";
+@import "components/first";
+@import "components/subtitle";
+@import "components/form";
+@import "components/form-modal";
+@import "components/catalog";
+@import "components/upload";

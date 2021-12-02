@@ -1,0 +1,19 @@
+.first {
+  background: $clay url("../img/bg-mobile.png") center/cover no-repeat;
+}
+
+.first__title {
+  margin: 0;
+  padding-top: 102px;
+
+  line-height: 33px;
+  text-align: center;
+
+  &--form {
+    padding-bottom: 51px;
+  }
+
+  &--catalog {
+    padding-bottom: 84px;
+  }
+}
