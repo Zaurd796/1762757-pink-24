@@ -21,12 +21,17 @@
   top: 47.5vh;
   left: 49vw;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 36px;
   margin: 0;
-  padding: 13px 20px 14px 19px;
+  padding: 0 20px;
 
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $white;
 
   background-color: $red;
@@ -91,6 +96,7 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .catalog__heart-icon {

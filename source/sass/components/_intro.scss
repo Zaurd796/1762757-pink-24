@@ -25,11 +25,13 @@
 }
 
 .intro__button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 280px;
+  min-height: 55px;
   margin-bottom: 32px;
-  padding: 21px 0;
 
   font-weight: bold;
   line-height: 18px;

@@ -72,12 +72,14 @@
 
   font-size: 14px;
   color: $red;
+  text-transform: uppercase;
 
   vertical-align: middle;
 
   &--dark {
     font-size: 18px;
     color: $clay;
+    text-transform: unset;
   }
 
   &--name {
@@ -123,7 +125,8 @@
 .form__personal-info-input {
   width: 100%;
   max-width: 280px;
-  padding: 23px 20px;
+  padding: 5px 20px;
+  min-height: 59px;
 
   font: inherit;
   color: inherit;
@@ -149,7 +152,8 @@
 .form__contacts-input {
   width: 100%;
   max-width: 280px;
-  padding: 23px 20px;
+  padding: 5px 20px;
+  min-height: 59px;
 
   font: inherit;
   color: inherit;
@@ -178,6 +182,7 @@
 .form__textarea {
   width: 100%;
   max-width: 280px;
+  min-height: 197px;
   padding: 22px 25px 22px 20px;
 
   font: inherit;
@@ -195,7 +200,6 @@
 }
 
 .form__button {
-  display: inline-block;
   width: 100%;
   max-width: 280px;
   margin-bottom: 46px;

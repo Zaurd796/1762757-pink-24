@@ -1,7 +1,11 @@
 .button {
-  padding: 23px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 59px;
 
   font: inherit;
+  font-weight: bold;
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
