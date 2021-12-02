@@ -1,0 +1,120 @@
+.catalog__box {
+  margin-bottom: 49px;
+}
+
+.catalog__subtitle {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.catalog__item-img--top {
+  width: 100%;
+  height: 137px;
+
+  object-fit: cover;
+}
+
+.catalog__hero-descr {
+  position: absolute;
+  top: 47.5vh;
+  left: 49vw;
+
+  margin: 0;
+  padding: 13px 20px 14px 19px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white;
+
+  background-color: $red;
+}
+
+.catalog__blockquote {
+  margin: 0;
+}
+
+.catalog__blockquote--top {
+  margin-bottom: 20px;
+}
+
+.catalog__item-link {
+  display: block;
+}
+
+.catalog__blockquote-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10px 25px 17px;
+
+  background-color: $concrete-gray;
+}
+
+.catalog__blockquote-author-box {
+  order: 1;
+  margin-bottom: 14px;
+}
+
+.catalog__blockquote-counter {
+  order: 3;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.catalog__blockquote-text {
+  order: 2;
+  margin-top: 0;
+  margin-bottom: 23px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.catalog__blockquote-author {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.catalog__blockquote-time {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.catalog__heart-icon {
+  order: -1;
+  margin-right: 18px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__item-img {
+  height: 180px;
+
+  object-fit: cover;
+}

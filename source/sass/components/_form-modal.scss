@@ -1,0 +1,53 @@
+.form-modal {
+  &--error {
+    padding: 44px 0 52px;
+  }
+
+  &--success {
+    padding: 40px 52px;
+  }
+}
+
+.form-modal__title {
+  margin-top: 0;
+
+  text-align: center;
+
+  &--error {
+    margin-bottom: 37px;
+  }
+
+  &--success {
+    margin-bottom: 41px;
+  }
+}
+
+.form-modal__text {
+  margin-top: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  &--error {
+    margin-bottom: 50px;
+  }
+
+  &--success {
+    margin-bottom: 41px;
+    max-width: 266px;
+  }
+}
+
+.form-modal__button-box {
+  &--success {
+    padding: 52px 0;
+
+    background-color: $concrete-gray;
+  }
+}
+
+.form-modal__button {
+  width: 100%;
+  max-width: 280px;
+}

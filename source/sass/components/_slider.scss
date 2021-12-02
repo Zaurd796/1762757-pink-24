@@ -1,0 +1,7 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item.slider__item--active {
+  display: block;
+}

@@ -1,0 +1,58 @@
+.intro {
+  // min-height: 462px;
+}
+
+.intro__title-box {
+  background-color: $clay;
+  background-image: url("../img/phone.png"), url("../img/bg-mobile.png");
+  background-position: bottom center, center;
+  background-size: 320px 286px, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.intro__title {
+  margin: 0;
+  padding-bottom: 320px;
+  padding-top: 95px;
+
+  text-align: center;
+}
+
+.intro__content-box {
+  padding: 28px 0 38px;
+
+  background-color: $mirage-blue;
+}
+
+.intro__button {
+  display: inline-block;
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 32px;
+  padding: 21px 0;
+
+  font-weight: bold;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+
+  border: 3px solid $white;
+  border-radius: 29px;
+}
+
+.intro__list {
+  margin-bottom: 28px;
+}
+
+.intro__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+}
+
+

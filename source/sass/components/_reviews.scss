@@ -1,0 +1,46 @@
+.reviews {
+  padding: 50px 0 60px;
+
+  background-color: $white;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__item {
+  margin-bottom: 44px;
+}
+
+.reviews__blockquote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  text-align: center;
+}
+
+.reviews__text {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.reviews__author {
+  order: -1;
+  margin-bottom: 31px;
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__author-info {
+  display: none;
+}
+
+.reviews__arrow {
+  display: none;
+}

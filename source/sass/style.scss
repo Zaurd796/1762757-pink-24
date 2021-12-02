@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+// global
+
+@import "../sass/global/var";
+@import "../sass/global/fonts";
+@import "../sass/global/global";
+
+// components
+
+@import "../sass/components/visually-hidden";
+@import "../sass/components/container";
+@import "../sass/components/logo";
+@import "../sass/components/title";
+@import "../sass/components/block-title";
+@import "../sass/components/store-links";
+@import "../sass/components/socials";
+@import "../sass/components/button";
+@import "../sass/components/header";
+@import "../sass/components/nav-list";
+@import "../sass/components/intro";
+@import "../sass/components/info";
+@import "../sass/components/slider";
+@import "../sass/components/reviews";
+@import "../sass/components/price";
+@import "../sass/components/contacts";
+@import "../sass/components/footer";
+
+// form
+
+@import "../sass/components/first";
+@import "../sass/components/subtitle";
+@import "../sass/components/form";
+@import "../sass/components/form-modal";
+
+// catalog
+
+@import "../sass/components/catalog";
+@import "../sass/components/upload";

@@ -1,0 +1,19 @@
+.header {
+  position: absolute;
+
+  width: 100%;
+  padding: 21px 0;
+
+  background: rgba($black, 0.3);
+}
+
+.header__logo {
+  .logo__icon {
+    margin-left: -73px;
+  }
+
+  .logo__icon-path--star,
+  .logo__icon-path--glasses {
+    display: none;
+  }
+}
