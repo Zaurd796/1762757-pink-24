@@ -10,8 +10,12 @@
   display: none;
 }
 
+.logo__icon-path--words {
+  fill: $white;
+}
+
 .logo__icon--header {
-  margin-left: -73px;
+  margin-left: -70px;
 }
 
 .logo__icon--footer {
@@ -19,4 +23,26 @@
   margin-bottom: 41px;
 
   vertical-align: middle;
+}
+
+@media (min-width: 660px) {
+  .logo__icon--header {
+    margin-left: unset;
+  }
+
+  .logo__icon-path--glasses {
+    display: unset;
+
+    fill: $white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo__icon--header {
+    display: none;
+  }
+
+  .logo__icon--desctop {
+    display: unset;
+  }
 }

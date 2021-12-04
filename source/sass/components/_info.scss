@@ -44,7 +44,7 @@
       width: 157px;
       height: 320px;
 
-      background: url("../img/info-3.png") center/cover no-repeat;
+      background: url("../img/info-3-mobile.png") center/cover no-repeat;
       content: "";
     }
   }
@@ -67,5 +67,257 @@
 }
 
 .info__diagram {
+  position: relative;
+
   display: none;
+}
+
+.info__diagram-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__diagram-img {
+  position: relative;
+
+  margin-top: -66px;
+  padding-top: 189px;
+  padding-left: 31px;
+  padding-right: 61px;
+
+  background: $white;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 120px;
+
+    width: 238px;
+    height: 276px;
+
+    background: url("../img/timer.svg") no-repeat;
+    content: "";
+  }
+}
+
+.info__diagram-img-descr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 176px;
+
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 163px;
+  color: $red;
+
+  border: 16px solid $red;
+  border-radius: 50%;
+}
+
+.info__diagram-content {
+  max-width: 310px;
+  padding-top: 89px;
+}
+
+.info__diagram-title {
+  max-width: 168px;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.info__link {
+  display: inline-block;
+  margin-top: 24px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $red;
+}
+
+@media (min-width: 660px) {
+  .info__title-box {
+    padding: unset;
+    margin-bottom: 47px;
+  }
+
+  .info__list-box-inner {
+    position: relative;
+
+    min-height: 547px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 268px;
+      height: 547px;
+
+      background: url("../img/info-3-tablet.png") center/cover no-repeat;
+      content: "";
+    }
+  }
+
+  .info__title {
+    line-height: 54px;
+  }
+
+  .info__title-span {
+    margin: unset;
+  }
+
+  .info__list-box {
+    padding: unset;
+
+    background-color: unset;
+  }
+
+  .info__list {
+    max-width: 310px;
+    margin-left: 310px;
+    padding-top: 75px;
+
+    text-align: unset;
+  }
+
+  .info__item {
+    margin-bottom: 46px;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .info__text--smiley {
+    margin-bottom: 0;
+  }
+
+  .info__diagram {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info__diagram {
+    background-color: $concrete-gray;
+  }
+
+  .info__title-box {
+    margin-bottom: 72px;
+  }
+
+  .info__title {
+    line-height: 68px;
+  }
+
+  .info__list-box-inner {
+    position: unset;
+
+    min-height: unset;
+    margin-bottom: 58px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .info__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: unset;
+    margin-left: unset;
+    padding-top: unset;
+
+    text-align: center;
+  }
+
+  .info__item {
+    margin: unset;
+
+    &::before {
+      display: block;
+
+      width: 308px;
+      height: 382px;
+
+      content: "";
+    }
+
+    &:nth-child(1)::before {
+      background: url("../img/info-1-desctop.png") no-repeat;
+    }
+
+    &:nth-child(2)::before {
+      background: url("../img/info-2-desctop.png") no-repeat;
+    }
+
+    &:nth-child(3)::before {
+      background: url("../img/info-3-desctop.png") no-repeat;
+    }
+  }
+
+  .info__item-title {
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: -75px;
+    padding-top: 53px;
+
+    background: $white;
+  }
+
+  .info__text {
+    max-width: 298px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    &--diagram {
+      max-width: unset;
+      margin-bottom: 47px;
+      margin-right: 13px;
+    }
+  }
+
+  .info__diagram-img {
+    margin-top: unset;
+    padding-top: 72px;
+
+    background: unset;
+
+    &::before {
+      top: 3px;
+    }
+  }
+
+  .info__diagram-content {
+    max-width: 534px;
+    padding-top: 115px;
+  }
+
+  .info__diagram-title {
+    max-width: unset;
+    margin-bottom: 37px;
+
+    line-height: 30px;
+  }
+
+  .info__link {
+    padding-bottom: 120px;
+    margin-top: unset;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

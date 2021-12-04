@@ -1,5 +1,6 @@
 .reviews {
   padding: 50px 0 60px;
+  margin-top: -37px;
 
   background-color: $white;
 }
@@ -44,4 +45,10 @@
 
 .reviews__arrow {
   display: none;
+}
+
+@media (min-width: 660px) {
+  .reviews {
+    margin: unset;
+  }
 }
