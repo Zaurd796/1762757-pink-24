@@ -10,13 +10,54 @@
   display: none;
 }
 
-.logo__icon--header {
-  margin-left: -73px;
+.logo__icon-path--words {
+  fill: $white;
 }
 
-.logo__icon--footer {
-  display: inline-block;
-  margin-bottom: 41px;
+.logo__icon--header {
+  margin-left: -70px;
+}
 
-  vertical-align: middle;
+@media (min-width: 660px) {
+  .logo__icon--header {
+    margin-left: unset;
+  }
+
+  .logo__icon-path--glasses {
+    display: unset;
+
+    fill: $white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo__icon--header {
+    display: none;
+  }
+
+  .logo__icon--footer {
+    display: none;
+  }
+
+  .logo__icon--desctop {
+    display: block;
+  }
+
+  .logo__icon--footer-desctop {
+    .logo__icon-path--words {
+      fill: $clay;
+    }
+
+    .logo__icon-path--star {
+      fill: $clay;
+    }
+
+    .logo__icon-path--glasses {
+      fill: $red;
+    }
+
+    .logo__icon-path--top-star {
+      fill: $red
+    }
+  }
 }
