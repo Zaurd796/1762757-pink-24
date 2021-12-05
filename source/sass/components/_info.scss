@@ -141,6 +141,10 @@
 }
 
 @media (min-width: 660px) {
+  .info {
+    margin-bottom: 109px;
+  }
+
   .info__title-box {
     padding: unset;
     margin-bottom: 47px;
@@ -208,6 +212,10 @@
 }
 
 @media (min-width: 1200px) {
+  .info {
+    margin-bottom: 72px;
+  }
+
   .info__diagram {
     background-color: $concrete-gray;
   }
@@ -277,7 +285,7 @@
   }
 
   .info__text {
-    max-width: 298px;
+    max-width: 252px;
     margin: 0 auto;
 
     font-size: 18px;
