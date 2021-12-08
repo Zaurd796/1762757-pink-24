@@ -1,4 +1,6 @@
 .first {
+  margin-bottom: 54px;
+
   background: $clay url("../img/bg-mobile.png") center/cover no-repeat;
 }
 
@@ -15,5 +17,32 @@
 
   &--catalog {
     padding-bottom: 84px;
+  }
+}
+
+@media (min-width: 660px) {
+  .first {
+    margin-bottom: 100px;
+  }
+
+  .first__title {
+    padding-top: 191px;
+
+    font-size: 50px;
+    line-height: 68px;
+
+    &--form {
+      padding-bottom: 74px;
+    }
+
+    &--catalog {
+      padding-bottom: 143px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .first__title {
+    padding: 184px 0 104px;
   }
 }

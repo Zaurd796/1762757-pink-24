@@ -1,12 +1,19 @@
 .form {
+  padding-top: 54px;
+  padding-bottom: 26px;
+}
+
+.form__container {
   display: flex;
   flex-direction: column;
-  padding-top: 54px;
+}
+
+.form__subtitle-box {
+  margin-bottom: 55px;
 }
 
 .form__subtitle {
-  margin-top: 0;
-  margin-bottom: 55px;
+  margin: 0;
 
   text-align: center;
 }
@@ -16,11 +23,6 @@
 }
 
 .form__fieldset {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-
   &--name {
     order: 1;
     padding-bottom: 44px;
@@ -51,9 +53,15 @@
   }
 }
 
+.form__fieldset-box {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
 .form__button-box {
   order: 6;
-  margin-bottom: 26px;
 }
 
 .form__personal-info-content {
@@ -77,6 +85,8 @@
   vertical-align: middle;
 
   &--dark {
+    margin-bottom: 0;
+
     font-size: 18px;
     color: $clay;
     text-transform: unset;
@@ -91,9 +101,10 @@
   }
 
   &--apps {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
 
     text-align: center;
+    line-height: 18px;
   }
 
   &--achievments {
@@ -124,7 +135,6 @@
 
 .form__personal-info-input {
   width: 100%;
-  max-width: 280px;
   padding: 5px 20px;
   min-height: 59px;
 
@@ -151,7 +161,6 @@
 
 .form__contacts-input {
   width: 100%;
-  max-width: 280px;
   padding: 5px 20px;
   min-height: 59px;
 
@@ -181,7 +190,6 @@
 
 .form__textarea {
   width: 100%;
-  max-width: 280px;
   min-height: 197px;
   padding: 22px 25px 22px 20px;
 
@@ -190,6 +198,7 @@
 
   border: 2px solid $mercury-gray;
   border-radius: 1px;
+  vertical-align: middle;
 
   resize: none;
 
@@ -201,12 +210,8 @@
 
 .form__button {
   width: 100%;
-  max-width: 280px;
   margin-bottom: 46px;
-
   text-align: center;
-
-  vertical-align: middle;
 }
 
 .form__text {
@@ -223,4 +228,268 @@
 
 .form__text-span-hidden {
   display: none;
+}
+
+@media (min-width: 660px) {
+  .form {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .form__subtitle-box {
+    margin-bottom: 82px;
+  }
+
+  .form__subtitle {
+    max-width: 490px;
+    margin: 0 auto;
+  }
+
+  .form__subtitle-span {
+    display: block;
+  }
+
+  .form__fieldset {
+    &--name {
+      order: 1;
+      padding-bottom: 0;
+      margin-bottom: 65px;
+    }
+
+    &--apps {
+      order: 2;
+      padding: 0;
+      margin-bottom: 65px;
+      background-color: unset;
+    }
+
+    &--info {
+      order: 3;
+      margin-bottom: 51px;
+      padding: 0;
+    }
+
+    &--achievments {
+      order: 4;
+      padding: 0;
+      margin-bottom: 64px;
+
+      background-color: unset;
+    }
+
+    &--review {
+      padding: 0;
+      margin-bottom: 70px;
+    }
+  }
+
+  .form__fieldset-box {
+    &:not(.form__fieldset-box--name) {
+      border: 2px solid $mercury-gray;
+      border-radius: 1px;
+    }
+
+    &--apps {
+      padding-bottom: 66px;
+    }
+
+    &--info {
+      padding: 0 62px 37px 62px;
+    }
+
+    &--achievments {
+      padding: 0 0 61px 62px;
+    }
+
+    &--review {
+      padding: 0 58px 53px 59px;
+    }
+  }
+
+  .form__personal-info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  .form__descr {
+    &--name {
+      padding-left: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+
+    &--apps {
+      margin-bottom: 61px;
+
+      line-height: 30px;
+    }
+
+    &--info {
+      display: unset;
+      margin-bottom: 41px;
+
+      text-align: center;
+    }
+
+    &--info-label {
+      padding-left: 17px;
+      margin-bottom: 0;
+    }
+
+    &--achievments {
+      margin-bottom: 60px;
+    }
+
+    &--review {
+      margin-bottom: 42px;
+    }
+  }
+
+  .form__radio-content {
+    margin-left: 62px;
+  }
+
+  .form__contacts-content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 41px;
+  }
+
+  .form__contacts-input {
+    margin-bottom: 22px;
+  }
+
+  .form__textarea {
+    padding: 23px 23px 23px 20px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__button {
+    max-width: 296px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    padding-bottom: 0;
+  }
+
+  .form__container {
+    position: relative;
+
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .form__subtitle-box {
+    margin-bottom: 95px;
+  }
+
+  .form__subtitle {
+    max-width: 756px;
+  }
+
+  .form__subtitle-span {
+    display: inline-block;
+  }
+
+  .form__fieldset {
+    &--apps {
+      margin-bottom: 0;
+    }
+
+    &--info {
+      margin-bottom: 64px;
+    }
+  }
+
+  .form__fieldset-box {
+    &--name {
+      max-width: 433px;
+      min-height: 380px;
+    }
+
+    &--apps {
+      position: absolute;
+      top: 142px;
+      right: 20px;
+
+      width: 100%;
+      max-width: 431px;
+    }
+
+    &--info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 62px 23px 62px;
+    }
+
+    &--achievments {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 69px;
+      padding: 0 66px 68px 62px;
+    }
+
+    &--review {
+      padding: 0 60px 45px 60px;
+    }
+  }
+
+  .form__descr {
+    &--info {
+      margin-bottom: 39px;
+    }
+
+    &--review {
+      margin-bottom: 39px;
+    }
+  }
+
+  .form__radio-content {
+    margin-left: 74px;
+  }
+
+  .form__contacts-content {
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 371px;
+    margin-bottom: 0;
+  }
+
+  .form__checkbox-content {
+    margin-bottom: 0;
+
+    &:nth-of-type(1) {
+      order: 0;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 1;
+    }
+
+    &:nth-of-type(4) {
+      order: 4;
+    }
+
+    &:nth-of-type(5) {
+      order: 2;
+    }
+
+    &:nth-of-type(6) {
+      order: 5;
+    }
+  }
 }

@@ -87,6 +87,10 @@
   .contacts__item {
     margin-bottom: 55px;
 
+    &--tel {
+      margin-right: 40px;
+    }
+
     &--address {
       max-width: 211px;
       margin: 0 auto;
@@ -121,6 +125,10 @@
 
   .contacts__item {
     margin-bottom: 0;
+
+    &--tel {
+      margin-right: 0;
+    }
 
     &--address {
       order: 2;
