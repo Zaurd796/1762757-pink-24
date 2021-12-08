@@ -4,7 +4,10 @@ console.log(contentBoxes);
 
 uploadButtons.forEach(function (item) {
   item.addEventListener("click", function() {
-    item.classList.toggle("upload__item-button--active");
+    uploadButtons.forEach(function (item) {
+      item.classList.remove("upload__item-button--active");
+    });
+    item.classList.add("upload__item-button--active");
     contentBoxes.forEach(function (item) {
       item.classList.add("upload__range-input-box--hidden");
     });
