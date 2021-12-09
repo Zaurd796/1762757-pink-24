@@ -380,16 +380,26 @@
 @media (min-width: 1200px) {
   .form {
     padding-bottom: 0;
+
+    .container {
+      max-width: unset;
+      padding: unset;
+      margin: unset;
+    }
   }
 
   .form__container {
-    position: relative;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 980px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   .form__subtitle-box {
+    width: 100%;
     margin-bottom: 95px;
   }
 
@@ -403,29 +413,31 @@
 
   .form__fieldset {
     &--apps {
-      margin-bottom: 0;
-    }
-
-    &--info {
-      margin-bottom: 64px;
-    }
-  }
-
-  .form__fieldset-box {
-    &--name {
-      max-width: 433px;
-      min-height: 380px;
-    }
-
-    &--apps {
-      position: absolute;
-      top: 142px;
-      right: 20px;
-
       width: 100%;
       max-width: 431px;
     }
 
+    &--name {
+      width: 100%;
+      max-width: 433px;
+      padding-top: 16px;
+    }
+
+    &--info {
+      width: 100%;
+      margin-bottom: 64px;
+    }
+
+    &--achievments {
+      width: 100%;
+    }
+
+    &--review {
+      width: 100%;
+    }
+  }
+
+  .form__fieldset-box {
     &--info {
       display: flex;
       justify-content: space-between;
@@ -491,5 +503,9 @@
     &:nth-of-type(6) {
       order: 5;
     }
+  }
+
+  .form__button-box {
+    width: 100%;
   }
 }

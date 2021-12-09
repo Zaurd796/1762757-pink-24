@@ -22,8 +22,8 @@
 
 .catalog__hero-descr {
   position: absolute;
-  top: 58.5vh;
-  left: 49vw;
+  top: 0;
+  right: 20px;
 
   display: flex;
   justify-content: center;
@@ -46,6 +46,8 @@
 }
 
 .catalog__blockquote--top {
+  position: relative;
+
   margin-bottom: 20px;
 }
 
@@ -160,8 +162,7 @@
   }
 
   .catalog__hero-descr {
-    top: 97.5vh;
-    left: 76vw;
+    top: 57px;
   }
 
   .catalog__blockquote-content {
@@ -222,7 +223,8 @@
   }
 
   .catalog__hero-descr {
-    top: 83.5vh;
+    top: 54px;
+    right: calc(50% - 470px);
   }
 
   .catalog__item-img {
