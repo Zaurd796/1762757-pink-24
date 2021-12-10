@@ -1,4 +1,4 @@
-.catalog__box {
+.catalog {
   margin-bottom: 49px;
 }
 
@@ -7,6 +7,10 @@
   margin-bottom: 60px;
 
   text-align: center;
+}
+
+.catalog__subtitle-span {
+  display: block;
 }
 
 .catalog__item-img--top {
@@ -18,8 +22,8 @@
 
 .catalog__hero-descr {
   position: absolute;
-  top: 47.5vh;
-  left: 49vw;
+  top: 0;
+  right: 20px;
 
   display: flex;
   justify-content: center;
@@ -42,6 +46,8 @@
 }
 
 .catalog__blockquote--top {
+  position: relative;
+
   margin-bottom: 20px;
 }
 
@@ -83,6 +89,10 @@
   line-height: 24px;
 }
 
+.catalog__blockquote-text-span {
+  display: block;
+}
+
 .catalog__blockquote-author {
   font-weight: bold;
   font-style: normal;
@@ -120,7 +130,108 @@
 }
 
 .catalog__item-img {
+  width: 100%;
   height: 180px;
 
   object-fit: cover;
+}
+
+@media (min-width: 660px) {
+  .catalog {
+    margin-bottom: 73px;
+  }
+
+  .catalog__subtitle {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+
+  .catalog__subtitle-span {
+    display: unset;
+  }
+
+  .catalog__blockquote--top {
+    margin-bottom: 50px;
+  }
+
+  .catalog__item-img {
+    &--top {
+      height: 509px;
+    }
+  }
+
+  .catalog__hero-descr {
+    top: 57px;
+  }
+
+  .catalog__blockquote-content {
+    padding: 30px;
+
+    &--top {
+      flex-direction: unset;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--bottom {
+      min-height: 199px;
+    }
+  }
+
+  .catalog__blockquote-counter {
+    &--top {
+      order: 2;
+    }
+
+    &--bottom {
+      margin-top: auto;
+    }
+  }
+
+  .catalog__blockquote-text {
+    &--top {
+      order: 3;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__blockquote-text-span {
+    display: unset;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .catalog__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog {
+    margin-bottom: 67px;
+  }
+
+  .catalog__subtitle {
+    max-width: 571px;
+    margin-bottom: 97px;
+  }
+
+  .catalog__hero-descr {
+    top: 54px;
+    right: calc(50% - 470px);
+  }
+
+  .catalog__item-img {
+    height: 400px;
+  }
+
+  .catalog__item-img--top {
+    height: 506px;
+  }
 }
