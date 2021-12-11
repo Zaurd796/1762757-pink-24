@@ -1,6 +1,5 @@
 .reviews {
   padding: 50px 0 60px;
-  margin-top: -37px;
 
   background-color: $white;
 }
@@ -48,12 +47,34 @@
 }
 
 .slider__dots {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  background-color: rgba($clay, 0.3);
+  border: none;
+  border-radius: 50%;
+
+  &.slider__dot--active {
+    background-color: $white;
+    border: 3px solid $clay;
+    box-sizing: content-box;
+  }
 }
 
 @media (min-width: 660px) {
   .reviews {
-    margin-top: unset;
     padding: 0;
     margin-bottom: 117px;
   }

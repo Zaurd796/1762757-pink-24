@@ -1,6 +1,10 @@
 .price {
   margin-bottom: 0;
   padding-bottom: 49px;
+
+  .container {
+    padding: 0;
+  }
 }
 
 .price__table {
@@ -31,10 +35,10 @@
 
 .price__table-popular {
   position: absolute;
-  top: -1px;
-  left: -17px;
+  top: 4px;
+  left: -19px;
 
-  width: 61px;
+  width: 74px;
   margin: 0;
 
   font-size: 14px;
@@ -82,11 +86,11 @@
   }
 
   &--yes {
-    background: url("../img/yes.svg") center no-repeat;
+    background: url("../img/yes.svg") 94% no-repeat;
   }
 
   &--no {
-    background: url("../img/no.svg") center no-repeat;
+    background: url("../img/no.svg") 94% no-repeat;
   }
 }
 
@@ -98,6 +102,10 @@
 @media (min-width: 660px) {
   .price {
     margin-bottom: 70px;
+
+    .container {
+      padding: 0 20px;
+    }
   }
 
   .price__table {

@@ -28,6 +28,24 @@
   line-height: 18px;
 }
 
+.footer__link {
+  path {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    path {
+      fill: $clay;
+    }
+  }
+
+  &:active {
+    path {
+      fill-opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: 660px) {
   .footer {
     padding: 36px 0 40px;
