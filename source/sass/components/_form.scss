@@ -122,6 +122,47 @@
   &--info-label {
     padding-left: 24px;
   }
+
+  &--radio {
+    position: relative;
+    padding-left: 70px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -4px;
+
+      width: 37px;
+      height: 37px;
+
+      border: 2px solid $mercury-gray;
+      border-radius: 50%;
+      content: "";
+
+      transition: all 0.1s linear;
+    }
+
+    &:hover::before {
+      border-color: $clay;
+    }
+
+    &:active::before {
+      border-color: $red;
+    }
+  }
+}
+
+.form__radio-input:checked + .form__descr--radio::after {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: $red;
+  border-radius: 50%;
+  content: "";
 }
 
 .form__radio-content {
@@ -130,6 +171,22 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+.form__personal-info-input,
+.form__contacts-input,
+.form__textarea {
+  outline: none;
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    border-color: $clay;
+  }
+
+  &:focus {
+    border-color: $red;
   }
 }
 
@@ -344,6 +401,10 @@
 
     &--review {
       margin-bottom: 42px;
+    }
+
+    &--radio {
+      padding-left: 59px;
     }
   }
 

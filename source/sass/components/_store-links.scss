@@ -1,6 +1,52 @@
 .store-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.store-links__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.store-links__link {
+  display: block;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+
+    background: url("../img/apple-logo.svg") no-repeat;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+
+    background: url("../img/android-logo.svg") no-repeat;
+  }
+
+  &--windows {
+    width: 44px;
+    height: 41px;
+
+    background: url("../img/microsoft-logo.svg") no-repeat;
+  }
 }

@@ -54,6 +54,20 @@
   line-height: 33px;
   color: $red;
   text-decoration: none;
+
+  transition: all 0.4s linear;
+
+  &:hover {
+    color: $clay;
+
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($clay, 0.3);
+
+    text-decoration: none;
+  }
 }
 
 .contacts__map {

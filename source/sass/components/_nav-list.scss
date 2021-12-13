@@ -10,11 +10,11 @@
     left: 0;
     right: 0;
 
-    display: unset;
+    display: block;
   }
 }
 
-.nav-list__item--menu-open {
+.nav-list__item.nav-list__item--menu-open {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,16 @@
 .nav-list__link {
   color: $white;
   text-decoration: none;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $red;
+  }
+
+  &:active {
+    color: rgba($red, 0.3);
+  }
 
   &.nav-list__link--menu-open {
     font-weight: bold;
@@ -49,5 +59,9 @@
     }
     font-size: 18px;
     line-height: 18px;
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }
