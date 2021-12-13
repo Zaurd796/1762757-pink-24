@@ -44,32 +44,17 @@
 
 .reviews__arrow {
   display: none;
-}
 
-.slider__dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  opacity: 0.3;
 
-.slider__dot {
-  width: 6px;
-  height: 6px;
-  padding: 0;
-  margin-right: 19px;
+  transition: all 0.3s linear;
 
-  &:last-child {
-    margin-right: 0;
+  &:hover {
+    opacity: unset;
   }
 
-  background-color: rgba($clay, 0.3);
-  border: none;
-  border-radius: 50%;
-
-  &.slider__dot--active {
-    background-color: $white;
-    border: 3px solid $clay;
-    box-sizing: content-box;
+  &:active {
+    opacity: 0.1;
   }
 }
 
@@ -158,9 +143,5 @@
 
       background: url("../img/right-arrow.svg") no-repeat;
     }
-  }
-
-  .slider__dots {
-    display: none;
   }
 }

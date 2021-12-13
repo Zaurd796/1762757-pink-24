@@ -6,10 +6,6 @@
   background-color: $white;
 }
 
-.footer__logo {
-  margin-bottom: 41px;
-}
-
 .footer__socials-list {
   margin-bottom: 41px;
 }
@@ -29,22 +25,43 @@
 }
 
 .footer__link {
-  path {
-    transition: all 0.3s ease-in-out;
-  }
-
   &:hover {
-    path {
+    .footer__link-icon {
       fill: $clay;
     }
   }
 
   &:active {
-    path {
-      fill-opacity: 0.3;
+    .footer__link-icon {
+      opacity: 0.3;
     }
   }
 }
+
+.footer__link-icon {
+  fill: $red;
+
+  transition: all 0.3s ease;
+}
+
+// код для svg вставленного не через спрайт
+// .footer__link {
+//   path {
+//     transition: all 0.3s ease-in-out;
+//   }
+
+//   &:hover {
+//     path {
+//       fill: $clay;
+//     }
+//   }
+
+//   &:active {
+//     path {
+//       fill-opacity: 0.3;
+//     }
+//   }
+// }
 
 @media (min-width: 660px) {
   .footer {
@@ -57,10 +74,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .footer__logo {
-    margin-bottom: 0;
   }
 
   .footer__socials-list {

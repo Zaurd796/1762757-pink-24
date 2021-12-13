@@ -150,6 +150,37 @@
       border-color: $red;
     }
   }
+
+  &--checkbox {
+    position: relative;
+
+    display: block;
+    padding-left: 60px;
+
+    &:hover::before {
+      border-color: $clay;
+    }
+
+    &:active::before {
+      border-color: $red;
+    }
+
+    &::before {
+      position: absolute;
+      top: -2px;
+      left: 0;
+
+      width: 35px;
+      height: 35px;
+
+      background: $white;
+      border: 2px solid $mercury-gray;
+      border-radius: 1px;
+      content: "";
+
+      transition: all 0.1s linear;
+    }
+  }
 }
 
 .form__radio-input:checked + .form__descr--radio::after {
@@ -162,6 +193,18 @@
 
   background-color: $red;
   border-radius: 50%;
+  content: "";
+}
+
+.form__checkbox-input:checked + .form__descr--checkbox::after {
+  position: absolute;
+  left: 7px;
+  top: 9px;
+
+  width: 22px;
+  height: 16px;
+
+  background: url("../img/tick.svg") no-repeat;
   content: "";
 }
 
@@ -234,10 +277,8 @@
 }
 
 .form__contacts-content {
-  margin-bottom: 29px;
-
-  &:last-of-type {
-    margin-bottom: 0;
+  &--tel {
+    margin-bottom: 29px;
   }
 }
 
@@ -413,9 +454,35 @@
   }
 
   .form__contacts-content {
+    position: relative;
+
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 41px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 59px;
+      height: 59px;
+
+      content: "";
+    }
+
+    &--tel {
+      margin-bottom: 41px;
+
+      &::before {
+        background: url("../img/phone-icon.svg") no-repeat center $mercury-gray;
+      }
+    }
+
+    &--mail {
+      &::before {
+        background: url("../img/mail-icon.svg") no-repeat center $mercury-gray;
+      }
+    }
   }
 
   .form__contacts-input {
@@ -509,7 +576,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 69px;
-      padding: 0 66px 68px 62px;
+      padding: 0 0 68px 62px;
     }
 
     &--review {

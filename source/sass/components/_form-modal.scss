@@ -1,14 +1,33 @@
 .form-modal {
+  position: fixed;
+
+  display: none;
+  width: 320px;
+
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
 
   &--error {
+    top: calc(50vh - 1 / 2 * 314px);
+    left: calc(50vw - 1 / 2 * 320px);
+
     padding: 44px 0 52px;
+
+    background-color: $white;
   }
 
   &--success {
+    top: calc(50vh - 1 / 2 * 401px);
+    left: calc(50vw - 1 / 2 * 320px);
+
     padding-top: 40px;
+
+    background-color: $white;
   }
+}
+
+.form-modal--open {
+  display: block;
 }
 
 .form-modal__title {
@@ -59,10 +78,16 @@
     width: 460px;
 
     &--error {
+      top: calc(50vh - 1 / 2 * 391px);
+      left: calc(50vw - 1 / 2 * 460px);
+
       padding: 49px 65px 54px;
     }
 
     &--success {
+      top: calc(50vh - 1 / 2 * 460px);
+      left: calc(50vw - 1 / 2 * 460px);
+
       padding-top: 49px;
     }
   }
@@ -110,7 +135,15 @@
     width: 780px;
 
     &--error {
+      top: calc(50vh - 1 / 2 * 405px);
+      left: calc(50vw - 1 / 2 * 780px);
+
       padding: 49px 0 0;
+    }
+
+    &--success {
+      top: calc(50vh - 1 / 2 * 405px);
+      left: calc(50vw - 1 / 2 * 780px);
     }
   }
 

@@ -24,32 +24,9 @@
 .upload__list-box {
   padding-bottom: 34px;
   margin-bottom: 38px;
+
+  border-bottom: 1px solid rgba($clay, 0.1);
 }
-
-// .upload__list {
-//   margin: 0;
-//   padding: 0;
-
-//   list-style: none;
-// }
-
-// .upload__item {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .upload__item-button {
-//   order: -1;
-// }
-
-// .upload__tabs {
-//   display: flex;
-//   // flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   flex-wrap: wrap;
-// }
 
 .upload__item-button {
   padding: 0;
@@ -67,17 +44,44 @@
     margin-right: 0;
   }
 
-  path {
-    fill: $clay;
-    fill-opacity: 0.3;
+  &:hover {
+    .upload__item-button-icon {
+      fill-opacity: 0.5;
+    }
   }
 
-  &--active {
-    path {
+  &.upload__item-button--active {
+    .upload__item-button-icon {
       fill: $red;
       fill-opacity: 1;
     }
   }
+
+  // код для svg вставленного не через спрайт
+  // path {
+  //   fill: $clay;
+  //   fill-opacity: 0.3;
+  // }
+
+  // &:hover {
+  //   path {
+  //     fill-opacity: 0.5;
+  //   }
+  // }
+
+  // &.upload__item-button--active {
+  //   path {
+  //     fill: $red;
+  //     fill-opacity: 1;
+  //   }
+  // }
+}
+
+.upload__item-button-icon {
+  fill: $clay;
+  fill-opacity: 0.3;
+
+  transition: all 0.3s ease;
 }
 
 .upload__range-input-box--hidden {
@@ -87,8 +91,60 @@
 .upload__range-input {
   display: block;
   width: 100%;
-  max-width: 280px;
+  max-width: 240px;
   margin: 0 auto;
+
+  appearance: none;
+  background-color: transparent;
+
+  &::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    margin-top: -6px;
+
+    background: $white;
+    border: 2px solid $red;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+
+    &:active {
+      background-color: $red;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    max-width: 240px;
+    height: 2px;
+    margin: 0 auto;
+
+    background-color: $clay;
+  }
+
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+
+    background: $white;
+    border: 2px solid $red;
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+
+    &:active {
+      background-color: $red;
+    }
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    max-width: 240px;
+    height: 2px;
+    margin: 0 auto;
+
+    background-color: $clay;
+  }
 }
 
 .upload__button {
@@ -102,19 +158,48 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  color: $red;
+
   text-align: center;
 
-  border: 3px solid $red;
   border-radius: 30px;
+
+  transition: all 0.3s linear;
 
   &--submit {
     margin-bottom: 12px;
+
+    color: $red;
+
+    border: 3px solid $red;
+
+    &:hover {
+      color: $white;
+
+      background-color: $red;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
-  &:disabled {
+  &--cancel {
     color: rgba($clay, 0.1);
+
     border: 3px solid rgba($clay, 0.1);
+
+    &:hover {
+      color: rgba($clay, 0.3);
+
+      border-color: rgba($clay, 0.3);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+
+      background-color: rgba($clay, 0.3);
+      border-color: transparent;
+    }
   }
 }
 
@@ -157,27 +242,71 @@
   .upload__list-box {
     padding-bottom: 0;
     margin-bottom: 67px;
+
+    border-bottom: none;
   }
 
-  // .upload__tabs {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 38px;
-
-  //   width: 100%;
-  //   max-width: 275px;
-  // }
-
   .upload__range-input-box {
+    position: relative;
+
     padding-bottom: 34px;
     margin-bottom: 36px;
+
+    border-bottom: 1px solid rgba($clay, 0.1);
 
     &--hidden {
       display: block;
     }
 
-    &:last-of-type {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -8px;
+
+      content: "";
+    }
+
+    &--crop {
+      &::before {
+        width: 22px;
+        height: 22px;
+
+        background: url("../img/crop-tablet.svg") no-repeat;
+      }
+    }
+
+    &--fill {
+      &::before {
+        width: 24px;
+        height: 22px;
+
+        background: url("../img/fill-tablet.svg") no-repeat;
+      }
+    }
+
+    &--contrast {
       margin-bottom: 0;
+
+      &::before {
+        width: 16px;
+        height: 16px;
+
+        background: url("../img/contrast-tablet.svg") no-repeat;
+      }
+    }
+  }
+
+  .upload__range-input {
+    max-width: 202px;
+    margin: 0;
+    margin-left: 51px;
+
+    &::-webkit-slider-runnable-track {
+      max-width: 202px;
+    }
+
+    &::-moz-range-track {
+      max-width: 202px;
     }
   }
 
@@ -226,13 +355,53 @@
   }
 
   .upload__range-input-box {
-    &:last-of-type {
+    &::before {
+      top: -19px;
+    }
+
+    &--crop {
+      &::before {
+        width: 44px;
+        height: 44px;
+
+        background: url("../img/crop.svg") no-repeat;
+      }
+    }
+
+    &--fill {
+      &::before {
+        width: 48px;
+        height: 43px;
+
+        background: url("../img/fill.svg") no-repeat;
+      }
+    }
+
+    &--contrast {
       padding-bottom: 0;
+
+      border-bottom: none;
+
+      &::before {
+        width: 32px;
+        height: 32px;
+
+        background: url("../img/contrast.svg") no-repeat;
+      }
     }
   }
 
   .upload__range-input {
     max-width: 288px;
+    margin-left: 92px;
+
+    &::-webkit-slider-runnable-track {
+      max-width: 288px;
+    }
+
+    &::-moz-range-track {
+      max-width: 288px;
+    }
   }
 
   .upload__wrapper {

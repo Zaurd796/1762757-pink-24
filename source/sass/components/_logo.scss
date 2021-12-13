@@ -2,62 +2,161 @@
   display: inline-block;
 }
 
-.logo__icon--desctop {
-  display: none;
+.logo--header {
+  &:hover {
+    .logo__image-header-mobile,
+    .logo__image-header-tablet,
+    .logo__image-header-desctop {
+      fill: $red;
+    }
+  }
+
+  &:active {
+    .logo__image-header-mobile,
+    .logo__image-header-tablet,
+    .logo__image-header-desctop {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
 }
 
-.logo__icon-path--glasses {
-  display: none;
-}
-
-.logo__icon-path--words {
+.logo__image-header-mobile,
+.logo__image-header-tablet,
+.logo__image-header-desctop {
   fill: $white;
+
+  transition: all 0.3s ease;
 }
 
-.logo__icon--header {
-  margin-left: -70px;
+.logo__image-header-tablet {
+  display: none;
+}
+
+.logo__image-header-desctop {
+  display: none;
+}
+
+.logo--footer {
+  margin-bottom: 41px;
+
+  &:hover {
+    .logo__image-footer-mobile,
+    .logo__image-footer-desctop {
+      fill: $red;
+    }
+  }
+
+  &:active {
+    .logo__image-footer-mobile,
+    .logo__image-footer-desctop {
+      fill: $clay;
+      opacity: 0.3;
+    }
+  }
+}
+
+.logo__image-footer-mobile,
+.logo__image-footer-desctop {
+  fill: $clay;
+
+  transition: all 0.3s ease;
+}
+
+.logo__image-footer-desctop {
+  display: none;
 }
 
 @media (min-width: 660px) {
-  .logo__icon--header {
-    margin-left: unset;
+  .logo__image-header-mobile {
+    display: none;
   }
 
-  .logo__icon-path--glasses {
-    display: unset;
+  .logo__image-header-tablet {
+    display: block;
+  }
 
-    fill: $white;
+  .logo--footer {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .logo__icon--header {
+  .logo__image-header-tablet {
     display: none;
   }
 
-  .logo__icon--footer {
+  .logo__image-footer-mobile {
     display: none;
   }
 
-  .logo__icon--desctop {
+  .logo__image-header-desctop {
     display: block;
   }
 
-  .logo__icon--footer-desctop {
-    .logo__icon-path--words {
-      fill: $clay;
-    }
-
-    .logo__icon-path--star {
-      fill: $clay;
-    }
-
-    .logo__icon-path--glasses {
-      fill: $red;
-    }
-
-    .logo__icon-path--top-star {
-      fill: $red;
-    }
+  .logo__image-footer-desctop {
+    display: block;
   }
 }
+
+// код для svg реализованных не через спрайт
+
+// .logo__icon--desctop {
+//   display: none;
+// }
+
+// .logo__icon-path--glasses {
+//   display: none;
+// }
+
+// .logo__icon-path--words {
+//   fill: $white;
+// }
+
+// .logo__icon--header {
+//   margin-left: -70px;
+// }
+
+// @media (min-width: 660px) {
+//   .logo__icon--header {
+//     margin-left: unset;
+//   }
+
+//   .logo__icon-path--glasses {
+//     display: unset;
+
+//     fill: $white;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .logo__icon--header {
+//     display: none;
+//   }
+
+//   .logo__icon--footer {
+//     display: none;
+//   }
+
+//   .logo__icon--desctop {
+//     display: block;
+//   }
+
+//   .logo__icon--footer-desctop {
+//     .logo__icon-path--words {
+//       fill: $clay;
+//     }
+
+//     .logo__icon-path--star {
+//       fill: $clay;
+//     }
+
+//     .logo__icon-path--glasses {
+//       fill: $red;
+//     }
+
+//     .logo__icon-path--top-star {
+//       fill: $red;
+//     }
+//   }
+// }

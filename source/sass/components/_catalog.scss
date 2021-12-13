@@ -112,6 +112,8 @@
 .catalog__heart-icon {
   order: -1;
   margin-right: 18px;
+
+  fill: $red;
 }
 
 .catalog__list {
@@ -182,11 +184,25 @@
   .catalog__blockquote-counter {
     &--top {
       order: 2;
+
+      output {
+        margin-right: 16px;
+      }
     }
 
     &--bottom {
       margin-top: auto;
     }
+
+    .catalog__heart-icon {
+      margin-left: auto;
+    }
+  }
+
+  .catalog__heart-icon {
+    order: unset;
+    margin-right: 0;
+    fill: #d22856;
   }
 
   .catalog__blockquote-text {

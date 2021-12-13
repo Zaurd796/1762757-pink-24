@@ -51,8 +51,10 @@
   }
 
   .nav-list__link {
+    position: relative;
+
     display: inline-block;
-    padding: 46px 39px 46px;
+    padding: 48px 39px 49px;
 
     &--last-child {
       padding-right: 0;
@@ -62,6 +64,20 @@
 
     &:active {
       color: rgba($white, 0.3);
+    }
+
+    &.nav-list__link--active {
+      &::before {
+        position: absolute;
+        bottom: 36px;
+        left: 39px;
+        right: 39px;
+
+        height: 2px;
+
+        background-color: $white;
+        content: "";
+      }
     }
   }
 }
