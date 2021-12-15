@@ -38,7 +38,7 @@
 }
 
 .logo--footer {
-  margin-bottom: 41px;
+  margin-bottom: 32px;
 
   &:hover {
     .logo__image-footer-mobile,
@@ -78,12 +78,22 @@
 
   .logo--footer {
     margin-bottom: 0;
+    margin-top: -13px;
+    margin-right: -16px;
   }
 }
 
 @media (min-width: 1200px) {
+  .logo--header {
+    margin-top: -16px;
+  }
+
   .logo__image-header-tablet {
     display: none;
+  }
+
+  .logo--footer {
+    margin-right: 6px;
   }
 
   .logo__image-footer-mobile {

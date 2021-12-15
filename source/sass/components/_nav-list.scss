@@ -11,6 +11,7 @@
     right: 0;
 
     display: block;
+    padding-top: 16px;
   }
 }
 
@@ -18,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 63px;
+  min-height: 65px;
 
   background: $clay;
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -42,6 +43,13 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 32px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 660px) {
+  .nav-list.nav-list--menu-open {
+    padding-top: 43px;
   }
 }
 
@@ -54,7 +62,7 @@
     position: relative;
 
     display: inline-block;
-    padding: 48px 39px 49px;
+    padding: 46px 40px 49px;
 
     &--last-child {
       padding-right: 0;

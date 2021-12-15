@@ -1,6 +1,10 @@
+.upload {
+  margin-bottom: 11px;
+}
+
 .upload__descr {
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 43px;
 
   font-size: 14px;
   text-align: center;
@@ -13,7 +17,7 @@
 }
 
 .upload__img-box {
-  margin-bottom: 43px;
+  margin-bottom: 41px;
 }
 
 .upload__img {
@@ -30,7 +34,7 @@
 
 .upload__item-button {
   padding: 0;
-  margin-right: 35px;
+  margin-right: 31px;
   margin-bottom: 39px;
 
   border: none;
@@ -204,10 +208,14 @@
 }
 
 @media (min-width: 660px) {
+  .upload {
+    margin-bottom: 5px;
+  }
+
   .upload__descr {
     max-width: 422px;
     margin: 0 auto;
-    margin-bottom: 78px;
+    margin-bottom: 71px;
     font-size: 18px;
   }
 
@@ -232,6 +240,7 @@
   .upload__form {
     width: 100%;
     max-width: 275px;
+    padding-top: 18px;
   }
 
   .upload__img {
@@ -241,7 +250,7 @@
 
   .upload__list-box {
     padding-bottom: 0;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
 
     border-bottom: none;
   }
@@ -260,8 +269,8 @@
 
     &::before {
       position: absolute;
-      left: 0;
-      top: -8px;
+      left: 5px;
+      top: -9px;
 
       content: "";
     }
@@ -325,20 +334,24 @@
 
 @media (min-width: 1200px) {
   .upload {
-    margin-bottom: 28px;
+    margin-bottom: 34px;
   }
 
   .upload__descr {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
   }
 
   .upload__content-box {
-    padding: 57px 0 57px;
+    padding: initial;
+    background-color: initial;
   }
 
   .upload__inner {
-    max-width: 980px;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 57px 0 57px;
+
+    background-color: $concrete-gray;
   }
 
   .upload__img-box {
@@ -351,7 +364,7 @@
   }
 
   .upload__list-box {
-    margin-bottom: 161px;
+    margin-bottom: 179px;
   }
 
   .upload__range-input-box {

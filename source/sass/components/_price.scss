@@ -1,6 +1,23 @@
 .price {
+  position: relative;
+
   margin-bottom: 0;
-  padding-bottom: 49px;
+  padding-bottom: 46px;
+
+  background-color: $concrete-gray;
+
+  &::before {
+    position: absolute;
+    top: -161px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 506px;
+
+    background: url("../img/price-bg-mobile.svg") no-repeat;
+    content: "";
+  }
 
   .container {
     padding: 0;
@@ -8,15 +25,42 @@
 }
 
 .price__table {
+  position: relative;
+
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 41px;
 
   border-collapse: collapse;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6%;
+    z-index: 10;
+
+    width: 2px;
+
+    background-color: $mercury-gray;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 6%;
+
+    width: 2px;
+
+    background-color: $mercury-gray;
+    content: "";
+  }
 }
 
 .price__table-descr {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 
   font-size: 16px;
   font-weight: bold;
@@ -35,36 +79,42 @@
 
 .price__table-popular {
   position: absolute;
-  top: 4px;
-  left: -19px;
+  top: 11%;
+  left: 11%;
 
-  width: 74px;
   margin: 0;
 
   font-size: 14px;
   text-transform: uppercase;
   color: $white;
 
-  background: $red;
-
   transform: rotate(-45deg);
+}
+
+.price__table-popular-span {
+  position: absolute;
+  top: 0;
+  left: 7%;
+
+  width: 74px;
+  height: 74px;
+
+  background: url("../img/hit-ribbon.svg") no-repeat;
 }
 
 .price__table-cell {
   width: 25%;
-  height: 59px;
+  height: 60px;
 
   &--head {
     position: relative;
 
     width: 25%;
-    height: 95px;
+    padding: 10px 0 25px;
 
     background: $clay;
     border: 2px solid $clay;
     border-radius: 1px 0 0 0;
-
-    overflow: hidden;
   }
 
   &--body-hidden {
@@ -76,21 +126,21 @@
   }
 
   &--body {
-    padding-left: 20px;
+    padding-left: 40px;
 
     font-size: 14px;
+    text-transform: uppercase;
 
-    background-color: $white;
     border: 2px solid $mercury-gray;
     border-radius: 1px 0 0 0;
   }
 
   &--yes {
-    background: url("../img/yes.svg") 94% no-repeat;
+    background: url("../img/yes.svg") 87% no-repeat;
   }
 
   &--no {
-    background: url("../img/no.svg") 94% no-repeat;
+    background: url("../img/no.svg") 87% no-repeat;
   }
 }
 
@@ -101,7 +151,12 @@
 
 @media (min-width: 660px) {
   .price {
-    margin-bottom: 70px;
+    margin-bottom: 10px;
+    padding-bottom: 59px;
+
+    &::before {
+      top: -138px;
+    }
 
     .container {
       padding: 0 20px;
@@ -110,13 +165,19 @@
 
   .price__table {
     width: 100%;
+    margin-bottom: 0;
 
     border-collapse: collapse;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .price__table-descr {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: -2px;
 
     font-size: 16px;
     font-weight: bold;
@@ -133,19 +194,20 @@
     color: $white;
   }
 
+  .price__table-popular-span {
+    position: absolute;
+    top: -9px;
+    left: -1%;
+    width: 61px;
+    height: 61px;
+    background: url("../img/hit-ribbon-tablet.svg") no-repeat;
+    overflow: hidden;
+  }
+
   .price__table-popular {
     position: absolute;
-    top: -1px;
-    left: -17px;
-
-    width: 61px;
-    margin: 0;
-
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $white;
-
-    background: $red;
+    top: 8%;
+    left: 3%;
 
     transform: rotate(-45deg);
   }
@@ -157,13 +219,14 @@
   .price__table-cell {
     display: table-cell;
     width: 25%;
-    height: 45px;
+    height: 47px;
 
     &--head {
       position: relative;
 
       width: 25%;
-      height: 75px;
+      height: 76px;
+      padding: 10px 0 6px;
 
       background: $clay;
       border: 2px solid $clay;
@@ -181,6 +244,7 @@
       padding-left: 15px;
 
       font-size: 14px;
+      text-transform: initial;
 
       background-color: $white;
       border: 2px solid $mercury-gray;
@@ -203,7 +267,15 @@
 
 @media (min-width: 1200px) {
   .price {
-    margin-bottom: 74px;
+    margin-bottom: 35px;
+    padding-bottom: 62px;
+
+    &::before {
+      top: -159px;
+
+      height: 534px;
+      background: url("../img/price-bg-desctop.svg") no-repeat;
+    }
   }
 
   .price__table {
@@ -214,7 +286,7 @@
 
   .price__table-descr {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
 
     font-weight: bold;
     text-transform: uppercase;
@@ -230,33 +302,34 @@
     color: $white;
   }
 
-  .price__table-popular {
+  .price__table-popular-span {
     position: absolute;
     top: 0;
-    left: -21px;
-
+    left: 1%;
     width: 74px;
-    margin: 0;
+    height: 74px;
+    background: url("../img/hit-ribbon.svg") no-repeat;
+  }
 
-    font-size: 14px;
-    text-transform: uppercase;
-    color: $white;
-
-    background: $red;
-
+  .price__table-popular {
+    position: absolute;
+    top: 16%;
+    left: 5%;
     transform: rotate(-45deg);
   }
 
   .price__table-cell {
     display: table-cell;
     width: 25%;
-    height: 59px;
+    height: 61px;
 
     &--head {
       position: relative;
 
       width: 25%;
-      height: 94px;
+      height: unset;
+      padding-top: 13px;
+      padding-bottom: 16px;
 
       background: $clay;
       border: 2px solid $clay;
@@ -272,6 +345,8 @@
 
     &--body {
       padding-left: 22px;
+
+      font-size: 18px;
 
       background-color: $white;
       border: 2px solid $mercury-gray;
