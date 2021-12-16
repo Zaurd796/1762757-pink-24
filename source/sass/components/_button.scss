@@ -12,5 +12,21 @@
 
   background: $jungle-green;
   border: 2px solid $jungle-green;
-  border-radius: 1px;
+  border-radius: 2px;
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: $eucalyptus-green;
+    border-color: $eucalyptus-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background: $mercury-gray;
+    border-color: $mercury-gray;
+  }
 }

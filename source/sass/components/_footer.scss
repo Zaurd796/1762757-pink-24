@@ -1,13 +1,9 @@
 .footer {
-  padding: 40px 0;
+  padding: 31px 0;
 
   text-align: center;
 
   background-color: $white;
-}
-
-.footer__logo {
-  margin-bottom: 41px;
 }
 
 .footer__socials-list {
@@ -29,22 +25,43 @@
 }
 
 .footer__link {
-  path {
-    transition: all 0.3s ease-in-out;
-  }
-
   &:hover {
-    path {
+    .footer__link-icon {
       fill: $clay;
     }
   }
 
   &:active {
-    path {
-      fill-opacity: 0.3;
+    .footer__link-icon {
+      opacity: 0.3;
     }
   }
 }
+
+.footer__link-icon {
+  fill: $red;
+
+  transition: all 0.3s ease;
+}
+
+// код для svg вставленного не через спрайт
+// .footer__link {
+//   path {
+//     transition: all 0.3s ease-in-out;
+//   }
+
+//   &:hover {
+//     path {
+//       fill: $clay;
+//     }
+//   }
+
+//   &:active {
+//     path {
+//       fill-opacity: 0.3;
+//     }
+//   }
+// }
 
 @media (min-width: 660px) {
   .footer {
@@ -59,11 +76,8 @@
     align-items: center;
   }
 
-  .footer__logo {
-    margin-bottom: 0;
-  }
-
   .footer__socials-list {
+    margin-top: -2px;
     margin-bottom: 0;
   }
 }

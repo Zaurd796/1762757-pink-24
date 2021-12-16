@@ -1,7 +1,23 @@
-.info__title-box {
-  padding: 46px 0 70px;
+.info {
+  position: relative;
 
-  background-color: $white;
+  &::before {
+    position: absolute;
+    top: 214px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 788px;
+
+    background-color: $concrete-gray;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    content: "";
+  }
+}
+
+.info__title-box {
+  padding: 40px 0 59px;
 }
 
 .info__title {
@@ -13,13 +29,11 @@
 
 .info__title-span {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 
 .info__list-box {
   padding-top: 53px;
-
-  background-color: $concrete-gray;
 }
 
 .info__list {
@@ -32,7 +46,7 @@
 }
 
 .info__item {
-  margin-bottom: 43px;
+  margin-bottom: 31px;
 
   &:last-child {
     margin-bottom: 0;
@@ -52,7 +66,7 @@
 
 .info__item-title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .info__text {
@@ -60,10 +74,14 @@
 
   font-size: 14px;
   line-height: 24px;
+
+  br {
+    display: none;
+  }
 }
 
 .info__text--smiley {
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 }
 
 .info__diagram {
@@ -118,13 +136,13 @@
 
 .info__diagram-content {
   max-width: 310px;
-  padding-top: 48px;
+  padding-top: 45px;
 }
 
 .info__diagram-title {
   max-width: 168px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 9px;
 
   font-weight: bold;
   font-size: 30px;
@@ -133,7 +151,7 @@
 
 .info__link {
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 11px;
 
   font-size: 14px;
   line-height: 24px;
@@ -152,18 +170,22 @@
 
 @media (min-width: 660px) {
   .info {
-    margin-bottom: 109px;
+    margin-bottom: 102px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .info__title-box {
     padding: unset;
-    margin-bottom: 47px;
+    margin-bottom: 36px;
   }
 
   .info__list-box-inner {
     position: relative;
 
-    min-height: 547px;
+    min-height: 481px;
 
     &::after {
       position: absolute;
@@ -190,21 +212,19 @@
     display: flex;
     justify-content: center;
     padding: unset;
-    margin-bottom: 55px;
-
-    background-color: unset;
+    margin-bottom: 51px;
   }
 
   .info__list {
     max-width: 310px;
     margin-left: 310px;
-    padding-top: 75px;
+    padding-top: 70px;
 
     text-align: unset;
   }
 
   .info__item {
-    margin-bottom: 46px;
+    margin-bottom: 34px;
 
     &:last-child {
       margin-bottom: 0;
@@ -212,6 +232,20 @@
       &::after {
         display: none;
       }
+    }
+  }
+
+  .info__text {
+    br {
+      display: initial;
+    }
+
+    &--diagram {
+      margin-right: 14px;
+    }
+
+    .info__text-br {
+      display: none;
     }
   }
 
@@ -226,15 +260,21 @@
 
 @media (min-width: 1200px) {
   .info {
-    margin-bottom: 72px;
-  }
+    margin-bottom: 73px;
+    padding-bottom: 73px;
 
-  .info__diagram {
-    background-color: $concrete-gray;
+    &::before {
+      top: 253px;
+
+      display: initial;
+      height: 1045px;
+
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
   }
 
   .info__title-box {
-    margin-bottom: 72px;
+    margin-bottom: 57px;
   }
 
   .info__title {
@@ -243,13 +283,13 @@
 
   .info__list-box {
     display: block;
+    margin-bottom: 68px;
   }
 
   .info__list-box-inner {
     position: unset;
 
     min-height: unset;
-    margin-bottom: 58px;
 
     &::after {
       display: none;
@@ -259,6 +299,7 @@
   .info__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
     max-width: unset;
     margin-left: unset;
     padding-top: unset;
@@ -271,9 +312,9 @@
 
     &::before {
       display: block;
-      width: 308px;
-      height: 309px;
-      margin-bottom: 59px;
+      width: 300px;
+      height: 299px;
+      margin-bottom: 56px;
 
       content: "";
     }
@@ -293,14 +334,12 @@
 
   .info__item-title {
     max-width: 240px;
-    margin: 0 auto;
-    margin-bottom: 35px;
-
-    background: $white;
+    margin-left: 33px;
+    margin-bottom: 24px;
   }
 
   .info__text {
-    max-width: 252px;
+    max-width: 249px;
     margin: 0 auto;
 
     font-size: 18px;
@@ -308,36 +347,67 @@
 
     &--diagram {
       max-width: unset;
-      margin-bottom: 47px;
-      margin-right: 13px;
+      margin-bottom: 31px;
+      margin-right: 7px;
+    }
+
+    br {
+      display: none;
+    }
+
+    .info__text-br {
+      display: initial;
     }
   }
 
+  .info__diagram-row {
+    justify-content: initial;
+  }
+
   .info__diagram-img {
-    // margin-top: unset;
-    padding-top: 72px;
+    padding-top: 86px;
+    padding-left: 40px;
+    margin-right: 76px;
 
     background: unset;
 
     &::before {
-      top: 3px;
+      top: 0;
+      left: 0;
+
+      width: 298px;
+      height: 345px;
+
+      background: url("../img/timer-desctop.svg") no-repeat;
     }
+  }
+
+  .info__diagram-img-descr {
+    width: 221px;
+    height: 221px;
+
+    font-size: 120px;
+
+    border-width: 18px;
   }
 
   .info__diagram-content {
     max-width: 534px;
-    padding-top: 115px;
+    padding-top: 95px;
   }
 
   .info__diagram-title {
     max-width: unset;
-    margin-bottom: 37px;
+    margin-bottom: 24px;
 
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 
   .info__link {
-    padding-bottom: 120px;
     margin-top: unset;
 
     font-size: 18px;

@@ -1,5 +1,4 @@
 .form {
-  padding-top: 54px;
   padding-bottom: 26px;
 }
 
@@ -9,7 +8,7 @@
 }
 
 .form__subtitle-box {
-  margin-bottom: 55px;
+  margin-bottom: 34px;
 }
 
 .form__subtitle {
@@ -25,31 +24,31 @@
 .form__fieldset {
   &--name {
     order: 1;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 
   &--apps {
     order: 4;
-    padding: 42px 0 42px;
+    padding: 39px 0 45px;
 
     background-color: $concrete-gray;
   }
 
   &--info {
     order: 3;
-    padding: 42px 0 44px;
+    padding: 34px 0 44px;
   }
 
   &--achievments {
     order: 2;
-    padding: 42px 0 44px;
+    padding: 35px 0 48px;
 
     background-color: $concrete-gray;
   }
 
   &--review {
     order: 5;
-    padding: 42px 0 52px;
+    padding: 33px 0 52px;
   }
 }
 
@@ -66,7 +65,7 @@
 
 .form__personal-info-content {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 19px;
 
   &:last-child {
     margin-bottom: 0;
@@ -76,7 +75,7 @@
 .form__descr {
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
 
   font-size: 14px;
   color: $red;
@@ -101,26 +100,29 @@
   }
 
   &--apps {
-    margin-bottom: 52px;
+    margin-bottom: 37px;
 
     text-align: center;
     line-height: 18px;
   }
 
   &--achievments {
-    margin-bottom: 44px;
+    max-width: 223px;
+    margin-bottom: 37px;
 
     text-align: center;
+    line-height: 22px;
   }
 
   &--review {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
 
     text-align: center;
   }
 
   &--info-label {
     padding-left: 24px;
+    margin-bottom: 6px;
   }
 
   &--radio {
@@ -129,8 +131,8 @@
 
     &::before {
       position: absolute;
-      left: 0;
-      top: -4px;
+      left: 2px;
+      top: -3px;
 
       width: 37px;
       height: 37px;
@@ -150,12 +152,43 @@
       border-color: $red;
     }
   }
+
+  &--checkbox {
+    position: relative;
+
+    display: block;
+    padding-left: 60px;
+
+    &:hover::before {
+      border-color: $clay;
+    }
+
+    &:active::before {
+      border-color: $red;
+    }
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: 2px;
+
+      width: 39px;
+      height: 39px;
+
+      background: $white;
+      border: 2px solid $mercury-gray;
+      border-radius: 1px;
+      content: "";
+
+      transition: all 0.1s linear;
+    }
+  }
 }
 
 .form__radio-input:checked + .form__descr--radio::after {
   position: absolute;
-  left: 11px;
-  top: 7px;
+  left: 13px;
+  top: 8px;
 
   width: 15px;
   height: 15px;
@@ -165,9 +198,21 @@
   content: "";
 }
 
+.form__checkbox-input:checked + .form__descr--checkbox::after {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+
+  width: 22px;
+  height: 16px;
+
+  background: url("../img/tick.svg") no-repeat;
+  content: "";
+}
+
 .form__radio-content {
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 42px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -209,7 +254,7 @@
 
 .form__checkbox-content {
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 52px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -234,10 +279,8 @@
 }
 
 .form__contacts-content {
-  margin-bottom: 29px;
-
-  &:last-of-type {
-    margin-bottom: 0;
+  &--tel {
+    margin-bottom: 20px;
   }
 }
 
@@ -248,7 +291,7 @@
 .form__textarea {
   width: 100%;
   min-height: 197px;
-  padding: 22px 25px 22px 20px;
+  padding: 12px 25px 22px 20px;
 
   font: inherit;
   color: inherit;
@@ -267,7 +310,7 @@
 
 .form__button {
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
@@ -289,12 +332,11 @@
 
 @media (min-width: 660px) {
   .form {
-    padding-top: 100px;
     padding-bottom: 50px;
   }
 
   .form__subtitle-box {
-    margin-bottom: 82px;
+    margin-bottom: 73px;
   }
 
   .form__subtitle {
@@ -310,33 +352,33 @@
     &--name {
       order: 1;
       padding-bottom: 0;
-      margin-bottom: 65px;
+      margin-bottom: 55px;
     }
 
     &--apps {
       order: 2;
       padding: 0;
-      margin-bottom: 65px;
+      margin-bottom: 52px;
       background-color: unset;
     }
 
     &--info {
       order: 3;
-      margin-bottom: 51px;
+      margin-bottom: 55px;
       padding: 0;
     }
 
     &--achievments {
       order: 4;
       padding: 0;
-      margin-bottom: 64px;
+      margin-bottom: 52px;
 
       background-color: unset;
     }
 
     &--review {
       padding: 0;
-      margin-bottom: 70px;
+      margin-bottom: 67px;
     }
   }
 
@@ -347,19 +389,19 @@
     }
 
     &--apps {
-      padding-bottom: 66px;
+      padding-bottom: 59px;
     }
 
     &--info {
-      padding: 0 62px 37px 62px;
+      padding: 0 62px 28px 59px;
     }
 
     &--achievments {
-      padding: 0 0 61px 62px;
+      padding: 0 0 53px 58px;
     }
 
     &--review {
-      padding: 0 58px 53px 59px;
+      padding: 0 58px 50px 59px;
     }
   }
 
@@ -378,14 +420,14 @@
     }
 
     &--apps {
-      margin-bottom: 61px;
+      margin-bottom: 41px;
 
       line-height: 30px;
     }
 
     &--info {
       display: unset;
-      margin-bottom: 41px;
+      margin-bottom: 31px;
 
       text-align: center;
     }
@@ -396,11 +438,21 @@
     }
 
     &--achievments {
-      margin-bottom: 60px;
+      max-width: unset;
+      margin-bottom: 47px;
+      margin-left: 59px;
+
+      text-align: initial;
+    }
+
+    &--checkbox {
+      &::before {
+        top: -3px;
+      }
     }
 
     &--review {
-      margin-bottom: 42px;
+      margin-bottom: 28px;
     }
 
     &--radio {
@@ -409,21 +461,55 @@
   }
 
   .form__radio-content {
-    margin-left: 62px;
+    margin-left: 58px;
   }
 
   .form__contacts-content {
+    position: relative;
+
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 41px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 59px;
+      height: 59px;
+
+      content: "";
+    }
+
+    &--tel {
+      margin-bottom: 31px;
+
+      &::before {
+        background: url("../img/phone-icon.svg") no-repeat center $mercury-gray;
+      }
+    }
+
+    &--mail {
+      &::before {
+        background: url("../img/mail-icon.svg") no-repeat center $mercury-gray;
+      }
+    }
   }
 
   .form__contacts-input {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
+  }
+
+  .form__checkbox-input:checked + .form__descr--checkbox::after {
+    top: 7px;
   }
 
   .form__textarea {
-    padding: 23px 23px 23px 20px;
+    padding: 17px 23px 23px 20px;
+  }
+
+  .form__button-box {
+    margin-bottom: 5px;
   }
 
   .form__wrapper {
@@ -452,7 +538,6 @@
   .form__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 980px;
     margin: 0 auto;
@@ -461,7 +546,7 @@
 
   .form__subtitle-box {
     width: 100%;
-    margin-bottom: 95px;
+    margin-bottom: 64px;
   }
 
   .form__subtitle {
@@ -476,21 +561,25 @@
     &--apps {
       width: 100%;
       max-width: 431px;
+      margin-bottom: 50px;
     }
 
     &--name {
       width: 100%;
       max-width: 433px;
-      padding-top: 16px;
+      padding-top: 22px;
+      margin-right: 72px;
+      margin-bottom: 48px;
     }
 
     &--info {
       width: 100%;
-      margin-bottom: 64px;
+      margin-bottom: 55px;
     }
 
     &--achievments {
       width: 100%;
+      margin-bottom: 50px;
     }
 
     &--review {
@@ -502,33 +591,47 @@
     &--info {
       display: flex;
       justify-content: space-between;
-      padding: 0 62px 23px 62px;
+      padding: 0 62px 14px 59px;
     }
 
     &--achievments {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 69px;
-      padding: 0 66px 68px 62px;
+      padding: 0 9px 63px 57px;
     }
 
     &--review {
-      padding: 0 60px 45px 60px;
+      padding: 0 60px 43px 60px;
     }
+  }
+
+  .form__checkbox-content-box {
+    display: grid;
+    grid-template-columns: repeat(3, 261px);
+    row-gap: 51px;
+    column-gap: 43px;
+  }
+
+  .form__personal-info-content {
+    margin-bottom: 57px;
   }
 
   .form__descr {
     &--info {
-      margin-bottom: 39px;
+      margin-bottom: 29px;
+    }
+
+    &--achievments {
+      margin-left: 221px;
+      margin-bottom: 45px;
     }
 
     &--review {
-      margin-bottom: 39px;
+      margin-bottom: 26px;
     }
   }
 
   .form__radio-content {
-    margin-left: 74px;
+    margin-left: 72px;
+    margin-bottom: 44px;
   }
 
   .form__contacts-content {
@@ -551,10 +654,12 @@
 
     &:nth-of-type(3) {
       order: 1;
+      margin-left: 11px;
     }
 
     &:nth-of-type(4) {
       order: 4;
+      margin-left: 11px;
     }
 
     &:nth-of-type(5) {
@@ -566,7 +671,16 @@
     }
   }
 
+  .form__textarea {
+    padding-top: 14px;
+    min-height: 130px;
+  }
+
   .form__button-box {
     width: 100%;
+  }
+
+  .form__text-span-hidden {
+    display: initial;
   }
 }

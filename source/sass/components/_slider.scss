@@ -5,3 +5,46 @@
 .slider__item.slider__item--active {
   display: block;
 }
+
+.slider__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin-right: 18px;
+
+  transition: all 0.3s linear;
+
+  background-color: rgba($clay, 0.3);
+  border: none;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba($clay, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($clay, 0.1);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.slider__dot--active {
+    background-color: $white;
+    border: 3px solid $clay;
+    box-sizing: content-box;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider__dots {
+    display: none;
+  }
+}

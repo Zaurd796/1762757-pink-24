@@ -1,48 +1,58 @@
 .first {
-  margin-bottom: 54px;
+  margin-bottom: 44px;
 
   background: $clay url("../img/bg-mobile.png") center/cover no-repeat;
 }
 
 .first__title {
   margin: 0;
-  padding-top: 102px;
 
   line-height: 33px;
   text-align: center;
 
   &--form {
-    padding-bottom: 51px;
+    padding-top: 95px;
+    padding-bottom: 44px;
   }
 
   &--catalog {
-    padding-bottom: 84px;
+    padding-top: 95px;
+    padding-bottom: 77px;
   }
 }
 
 @media (min-width: 660px) {
   .first {
-    margin-bottom: 100px;
+    margin-bottom: 91px;
   }
 
   .first__title {
-    padding-top: 191px;
-
     font-size: 50px;
     line-height: 68px;
 
     &--form {
-      padding-bottom: 74px;
+      padding-top: 178px;
+      padding-bottom: 59px;
     }
 
     &--catalog {
-      padding-bottom: 143px;
+      padding-top: 177px;
+      padding-bottom: 128px;
     }
   }
 }
 
 @media (min-width: 1200px) {
   .first__title {
-    padding: 184px 0 104px;
+    &--form {
+      padding: 171px 0 88px;
+    }
+
+    &--catalog {
+      max-width: 357px;
+      padding-top: 171px;
+      padding-bottom: 87px;
+      margin: 0 auto;
+    }
   }
 }

@@ -11,6 +11,7 @@
     right: 0;
 
     display: block;
+    padding-top: 16px;
   }
 }
 
@@ -18,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 63px;
+  min-height: 65px;
 
   background: $clay;
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -42,6 +43,13 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 32px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 660px) {
+  .nav-list.nav-list--menu-open {
+    padding-top: 43px;
   }
 }
 
@@ -51,8 +59,10 @@
   }
 
   .nav-list__link {
+    position: relative;
+
     display: inline-block;
-    padding: 46px 39px 46px;
+    padding: 46px 40px 49px;
 
     &--last-child {
       padding-right: 0;
@@ -62,6 +72,20 @@
 
     &:active {
       color: rgba($white, 0.3);
+    }
+
+    &.nav-list__link--active {
+      &::before {
+        position: absolute;
+        bottom: 36px;
+        left: 39px;
+        right: 39px;
+
+        height: 2px;
+
+        background-color: $white;
+        content: "";
+      }
     }
   }
 }

@@ -12,14 +12,14 @@
 
 .intro__title {
   margin: 0;
-  padding-bottom: 320px;
-  padding-top: 95px;
+  padding-bottom: 314px;
+  padding-top: 90px;
 
   text-align: center;
 }
 
 .intro__content-box {
-  padding: 28px 0 38px;
+  padding: 28px 0 33px;
 
   background-color: $mirage-blue;
 }
@@ -61,7 +61,7 @@
 }
 
 .intro__list {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .intro__text {
@@ -81,7 +81,7 @@
 
   .intro {
     min-height: 729px;
-    margin-bottom: 58px;
+    margin-bottom: 47px;
 
     background-color: $clay;
     background-image: url("../img/phone-tablet.png"), url("../img/bg-mobile.png");
@@ -101,9 +101,10 @@
 
   .intro__title {
     max-width: 247px;
-    padding-top: 212px;
+    padding-top: 204px;
     padding-bottom: unset;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
+    margin-left: 25px;
   }
 
   .intro__button {
@@ -112,7 +113,7 @@
   }
 
   .intro__list {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
   }
 
   .intro__text {
@@ -123,7 +124,7 @@
 @media (min-width: 1200px) {
   .intro {
     min-height: 853px;
-    margin-bottom: 77px;
+    margin-bottom: 63px;
 
     background-color: $clay;
     background-image: url("../img/phone-desctop.png"), url("../img/bg-mobile.png");
@@ -133,18 +134,18 @@
   }
 
   .intro__title {
-    padding-top: 224px;
-    margin-bottom: 51px;
+    padding-top: 211px;
+    margin-bottom: 35px;
   }
 
   .intro__button {
     max-width: unset;
-    margin-bottom: 67px;
+    margin-bottom: 69px;
 
     font-size: 21px;
   }
 
   .intro__list {
-    margin-bottom: 58px;
+    margin-bottom: 51px;
   }
 }
