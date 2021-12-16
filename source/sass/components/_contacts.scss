@@ -5,17 +5,18 @@
 
   text-align: center;
 
-  background-color: $white;
+
 
   &::before {
     position: absolute;
-    top: 366px;
+    top: 411px;
     left: 0;
 
     width: 100%;
     height: 123px;
 
-    background: url("../img/triangle-white-mobile.svg") no-repeat;
+    background-color: $white;
+    clip-path: polygon(0 0, 100% 0, 50% 26%);
     content: "";
   }
 }
@@ -96,9 +97,9 @@
     margin-bottom: -6px;
 
     &::before {
-      top: 351px;
+      top: 408px;
 
-      background: url("../img/triangle-white-tablet.svg") no-repeat;
+      clip-path: polygon(0 0, 100% 0, 50% 53%);
     }
   }
 

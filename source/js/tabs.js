@@ -1,6 +1,5 @@
 const uploadButtons = document.querySelectorAll(".upload__item-button");
 const contentBoxes = document.querySelectorAll(".upload__range-input-box");
-console.log(contentBoxes);
 
 uploadButtons.forEach(function (item) {
   item.addEventListener("click", function() {

@@ -4,18 +4,17 @@
   margin-bottom: 0;
   padding-bottom: 46px;
 
-  background-color: $concrete-gray;
-
   &::before {
     position: absolute;
-    top: -161px;
+    top: -100px;
     left: 0;
     z-index: -1;
 
     width: 100%;
-    height: 506px;
+    height: 482px;
 
-    background: url("../img/price-bg-mobile.svg") no-repeat;
+    background-color: $concrete-gray;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
     content: "";
   }
 
@@ -136,11 +135,11 @@
   }
 
   &--yes {
-    background: url("../img/yes.svg") 87% no-repeat;
+    background: url("../img/yes.svg") 87% no-repeat $white;
   }
 
   &--no {
-    background: url("../img/no.svg") 87% no-repeat;
+    background: url("../img/no.svg") 87% no-repeat $white;
   }
 }
 
@@ -155,7 +154,9 @@
     padding-bottom: 59px;
 
     &::before {
-      top: -138px;
+      height: 390px;
+
+      clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
     }
 
     .container {
@@ -252,11 +253,11 @@
     }
 
     &--yes {
-      background: url("../img/yes.svg") center no-repeat;
+      background: url("../img/yes.svg") center no-repeat $white;
     }
 
     &--no {
-      background: url("../img/no.svg") center no-repeat;
+      background: url("../img/no.svg") center no-repeat $white;
     }
   }
 
@@ -274,7 +275,8 @@
       top: -159px;
 
       height: 534px;
-      background: url("../img/price-bg-desctop.svg") no-repeat;
+
+      clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
     }
   }
 
@@ -354,11 +356,11 @@
     }
 
     &--yes {
-      background: url("../img/yes.svg") center no-repeat;
+      background: url("../img/yes.svg") center no-repeat $white;
     }
 
     &--no {
-      background: url("../img/no.svg") center no-repeat;
+      background: url("../img/no.svg") center no-repeat $white;
     }
   }
 }

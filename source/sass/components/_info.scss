@@ -3,14 +3,15 @@
 
   &::before {
     position: absolute;
-    top: 131px;
+    top: 214px;
     left: 0;
     z-index: -1;
 
     width: 100%;
-    height: 828px;
+    height: 788px;
 
-    background: url("../img/info-bg-mobile.svg") no-repeat;
+    background-color: $concrete-gray;
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
     content: "";
   }
 }
@@ -33,8 +34,6 @@
 
 .info__list-box {
   padding-top: 53px;
-
-  background-color: $concrete-gray;
 }
 
 .info__list {
@@ -214,8 +213,6 @@
     justify-content: center;
     padding: unset;
     margin-bottom: 51px;
-
-    background-color: unset;
   }
 
   .info__list {
@@ -266,14 +263,13 @@
     margin-bottom: 73px;
     padding-bottom: 73px;
 
-    background-color: $concrete-gray;
-
     &::before {
       top: 253px;
 
       display: initial;
+      height: 1045px;
 
-      background: url("../img/info-bg-desctop.svg") no-repeat;
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }
   }
 
