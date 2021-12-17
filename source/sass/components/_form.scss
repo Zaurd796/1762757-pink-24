@@ -421,6 +421,7 @@
 
     &--apps {
       margin-bottom: 41px;
+      padding: 0 25px;
 
       line-height: 30px;
     }
@@ -428,6 +429,7 @@
     &--info {
       display: unset;
       margin-bottom: 31px;
+      padding: 0 25px;
 
       text-align: center;
     }
@@ -440,7 +442,8 @@
     &--achievments {
       max-width: unset;
       margin-bottom: 47px;
-      margin-left: 59px;
+      margin-left: 33px;
+      padding: 0 30px;
 
       text-align: initial;
     }
@@ -453,6 +456,7 @@
 
     &--review {
       margin-bottom: 28px;
+      padding: 0 42px;
     }
 
     &--radio {
@@ -620,7 +624,7 @@
     }
 
     &--achievments {
-      margin-left: 221px;
+      margin-left: 195px;
       margin-bottom: 45px;
     }
 
@@ -669,6 +673,10 @@
     &:nth-of-type(6) {
       order: 5;
     }
+  }
+
+  .form__checkbox-input:checked + .form__descr--checkbox::after {
+    left: 10px;
   }
 
   .form__textarea {

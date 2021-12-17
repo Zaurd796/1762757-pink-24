@@ -1,7 +1,12 @@
 .first {
   margin-bottom: 44px;
 
-  background: $clay url("../img/bg-mobile.png") center/cover no-repeat;
+  background: $clay url("../img/bg-mobile.png") 0 0/cover no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
 .first__title {
@@ -24,6 +29,14 @@
 @media (min-width: 660px) {
   .first {
     margin-bottom: 91px;
+
+    background-image: url("../img/bg-tablet.png");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   .first__title {
@@ -43,6 +56,15 @@
 }
 
 @media (min-width: 1200px) {
+  .first {
+    background-image: url("../img/bg-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+
   .first__title {
     &--form {
       padding: 171px 0 88px;
