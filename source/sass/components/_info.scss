@@ -60,6 +60,11 @@
 
       background: url("../img/info-3-mobile.png")  no-repeat;
       content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/info-3-mobile@2x.png");
+        background-size: 157px auto;
+      }
     }
   }
 }
@@ -197,6 +202,11 @@
 
       background: url("../img/info-3-tablet.png") no-repeat;
       content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/info-3-tablet@2x.png");
+        background-size: 268px auto;
+      }
     }
   }
 
@@ -320,15 +330,30 @@
     }
 
     &:nth-child(1)::before {
-      background: url("../img/info-1-desctop.png") no-repeat;
+      background: url("../img/info-1-desktop.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/info-1-desktop@2x.png");
+        background-size: 300px auto;
+      }
     }
 
     &:nth-child(2)::before {
-      background: url("../img/info-2-desctop.png") no-repeat;
+      background: url("../img/info-2-desktop.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/info-2-desktop@2x.png");
+        background-size: 300px auto;
+      }
     }
 
     &:nth-child(3)::before {
-      background: url("../img/info-3-desctop.png") no-repeat;
+      background: url("../img/info-3-desktop.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/info-3-desktop@2x.png");
+        background-size: 300px auto;
+      }
     }
   }
 
