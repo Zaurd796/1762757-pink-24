@@ -138,7 +138,7 @@
 
     background-color: $clay;
     background-image: url("../img/phone-desktop.png"), url("../img/bg-desktop.png");
-    background-position: bottom right, center;
+    background-position: calc(50% + 69px) bottom, center;
     background-size: 1050px 645px, cover;
     background-repeat: no-repeat, no-repeat;
 
