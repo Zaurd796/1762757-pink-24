@@ -36,3 +36,5 @@ toggle.addEventListener("click", function (evt) {
     }
   });
 })
+
+console.log("hello world");
