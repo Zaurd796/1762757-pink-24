@@ -89,6 +89,12 @@
   height: 200px;
 }
 
+@media (min-width: 476px) {
+  .contacts::before {
+    top: 382px;
+  }
+}
+
 @media (min-width: 660px) {
   .contacts {
     padding-top: 44px;
@@ -137,6 +143,12 @@
 
   .contacts__map {
     height: 374px;
+  }
+}
+
+@media (min-width: 972px) {
+  .contacts::before {
+    top: 305px;
   }
 }
 
