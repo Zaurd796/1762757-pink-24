@@ -6,7 +6,7 @@
   &:hover {
     .logo__image-header-mobile,
     .logo__image-header-tablet,
-    .logo__image-header-desctop {
+    .logo__image-header-desctop path {
       fill: $red;
     }
   }
@@ -14,7 +14,7 @@
   &:active {
     .logo__image-header-mobile,
     .logo__image-header-tablet,
-    .logo__image-header-desctop {
+    .logo__image-header-desctop path {
       fill: $white;
       opacity: 0.3;
     }
@@ -22,8 +22,7 @@
 }
 
 .logo__image-header-mobile,
-.logo__image-header-tablet,
-.logo__image-header-desctop {
+.logo__image-header-tablet {
   fill: $white;
 
   transition: all 0.3s ease;
@@ -35,31 +34,52 @@
 
 .logo__image-header-desctop {
   display: none;
+
+  path {
+    transition: all 0.3s ease;
+  }
 }
 
 .logo--footer {
   margin-bottom: 32px;
 
   &:hover {
-    .logo__image-footer-mobile,
-    .logo__image-footer-desctop {
+    .logo__image-footer-mobile path,
+    .logo__image-footer-desctop path {
       fill: $red;
     }
   }
 
+  // &:active {
+  //   .logo__image-footer-mobile,
+  //   .logo__image-footer-desctop {
+  //     fill: $clay;
+  //     opacity: 0.3;
+  //   }
+  // }
+
   &:active {
-    .logo__image-footer-mobile,
-    .logo__image-footer-desctop {
-      fill: $clay;
+    .logo__image-footer-mobile path {
       opacity: 0.3;
+    }
+
+    .logo__image-footer-mobile .logo__image-footer-mobile--words {
+      fill: $clay;
+    }
+
+    .logo__image-footer-desctop path {
+      opacity: 0.3;
+    }
+
+    .logo__image-footer-desctop .logo__image-footer-desctop--words,
+    .logo__image-footer-desctop .logo__image-footer-desctop--stars {
+      fill: $clay;
     }
   }
 }
 
-.logo__image-footer-mobile,
-.logo__image-footer-desctop {
-  fill: $clay;
-
+.logo__image-footer-mobile path,
+.logo__image-footer-desctop path {
   transition: all 0.3s ease;
 }
 
@@ -108,65 +128,3 @@
     display: block;
   }
 }
-
-// код для svg реализованных не через спрайт
-
-// .logo__icon--desctop {
-//   display: none;
-// }
-
-// .logo__icon-path--glasses {
-//   display: none;
-// }
-
-// .logo__icon-path--words {
-//   fill: $white;
-// }
-
-// .logo__icon--header {
-//   margin-left: -70px;
-// }
-
-// @media (min-width: 660px) {
-//   .logo__icon--header {
-//     margin-left: unset;
-//   }
-
-//   .logo__icon-path--glasses {
-//     display: unset;
-
-//     fill: $white;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .logo__icon--header {
-//     display: none;
-//   }
-
-//   .logo__icon--footer {
-//     display: none;
-//   }
-
-//   .logo__icon--desctop {
-//     display: block;
-//   }
-
-//   .logo__icon--footer-desctop {
-//     .logo__icon-path--words {
-//       fill: $clay;
-//     }
-
-//     .logo__icon-path--star {
-//       fill: $clay;
-//     }
-
-//     .logo__icon-path--glasses {
-//       fill: $red;
-//     }
-
-//     .logo__icon-path--top-star {
-//       fill: $red;
-//     }
-//   }
-// }
