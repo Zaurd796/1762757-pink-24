@@ -1,4 +1,5 @@
-const uploadButtons = document.querySelectorAll(".upload__item-button");
+if (document.querySelectorAll(".upload__item-button").length) {
+  const uploadButtons = document.querySelectorAll(".upload__item-button");
 const contentBoxes = document.querySelectorAll(".upload__range-input-box");
 
 uploadButtons.forEach(function (item) {
@@ -14,6 +15,8 @@ uploadButtons.forEach(function (item) {
     inputBox.classList.remove("upload__range-input-box--hidden");
   });
 });
+}
+
 // uploadButtons.forEach(function(item) {
 //   item.addEventListener("click", function() {
 //     if (item !== this) {
