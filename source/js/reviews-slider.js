@@ -1,8 +1,8 @@
-if (document.querySelectorAll("#reviews-slide").length) {
-  const reviewsSlides = document.querySelectorAll("#reviews-slide");
+if (document.querySelectorAll("[data-item='reviews-slide']").length) {
+  const reviewsSlides = document.querySelectorAll("[data-item='reviews-slide']");
   const prev =document.querySelector(".reviews__arrow--left");
   const next =document.querySelector(".reviews__arrow--right");
-  const reviewsDots = document.querySelectorAll("#reviews-dot");
+  const reviewsDots = document.querySelectorAll("[data-button='reviews-dot']");
 
   let index = 0;
 
