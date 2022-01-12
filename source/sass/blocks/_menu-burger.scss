@@ -1,12 +1,17 @@
 .menu-burger {
   position: relative;
 
+  display: none;
   width: 50px;
   height: 24px;
   padding: 0;
 
   border: none;
   background-color: transparent;
+
+  &.menu-burger--menu-close {
+    display: block;
+  }
 
   &:hover {
     &::before {
@@ -118,7 +123,7 @@
 }
 
 @media (min-width: 1200px) {
-  .menu-burger {
+  .menu-burger.menu-burger--menu-close {
     display: none;
   }
 }

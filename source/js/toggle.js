@@ -4,6 +4,10 @@ const menu = document.querySelector(".nav-list");
 const menuItems = menu.querySelectorAll(".nav-list__item");
 const menuLinks = menu.querySelectorAll(".nav-list__link");
 
+header.classList.add("header--menu-close");
+menu.classList.add("nav-list--menu-close");
+toggle.classList.add("menu-burger--menu-close");
+
 toggle.addEventListener("click", function (evt) {
   evt.preventDefault();
 

@@ -1,14 +1,15 @@
 .socials {
   display: flex;
-  max-width: 172px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
 .socials__item {
-  margin-right: 14px;
+  margin-right: 7px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -22,6 +23,7 @@
 
   border-radius: 50%;
   border: 3px solid rgba($clay, 0.1);
+  box-sizing: content-box;
 
   transition: all 0.3s linear;
 
@@ -48,7 +50,7 @@
 
 @media (min-width: 1200px) {
   .socials__item {
-    margin-right: 11px;
+    margin-right: 5px;
 
     &:last-child {
       margin-right: 0;

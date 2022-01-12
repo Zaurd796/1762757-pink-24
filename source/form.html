@@ -61,11 +61,11 @@
               fill="#D22856" />
           </svg>
         </a>
-        <nav class="nav">
-          <button class="menu-burger" type="button">
-            <span class="visually-hidden">меню бургер</span>
-            <span class="menu-burger__bar"></span>
-          </button>
+        <button class="menu-burger" type="button">
+          <span class="visually-hidden">меню бургер</span>
+          <span class="menu-burger__bar"></span>
+        </button>
+        <nav class="header__nav">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="index.html">Главная</a>
@@ -130,16 +130,19 @@
               <legend class="form__descr form__descr--apps">С каким приложением путешествовали?</legend>
               <p class="form__radio-content">
                 <input class="form__radio-input visually-hidden" id="ios" type="radio" name="radio" value="ios" checked>
-                <label class="form__descr form__descr--dark form__descr--radio" for="ios">Pink для iOS</label>
+                <label class="form__descr form__descr--dark form__descr--radio" tabindex="0" for="ios">Pink для
+                  iOS</label>
               </p>
               <p class="form__radio-content">
                 <input class="form__radio-input visually-hidden" id="android" type="radio" name="radio" value="android">
-                <label class="form__descr form__descr--dark form__descr--radio" for="android">Pink на Android</label>
+                <label class="form__descr form__descr--dark form__descr--radio" tabindex="0" for="android">Pink на
+                  Android</label>
               </p>
               <p class="form__radio-content">
                 <input class="form__radio-input visually-hidden" id="windows" type="radio" name="radio"
                   value="windows-phone">
-                <label class="form__descr form__descr--dark form__descr--radio" for="windows">Windows Phone</label>
+                <label class="form__descr form__descr--dark form__descr--radio" tabindex="0" for="windows">Windows
+                  Phone</label>
               </p>
             </fieldset>
           </div>
@@ -170,37 +173,43 @@
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-1" type="checkbox"
                     name="selfi-with-a-shark" checked>
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-1">Сделал селфи с
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0"
+                    for="checkbox-1">Сделал селфи с
                     акулой</label>
                 </p>
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-2" type="checkbox"
                     name="burnt-on-the-beach" checked>
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-2">Обгорел на
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0"
+                    for="checkbox-2">Обгорел на
                     пляже</label>
                 </p>
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-3" type="checkbox"
                     name="saw-chuck-norris">
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-3">Видел Чака
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0" for="checkbox-3">Видел
+                    Чака
                     Норриса</label>
                 </p>
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-4" type="checkbox"
                     name="bought-presents">
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-4">Накупил
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0"
+                    for="checkbox-4">Накупил
                     сувениров</label>
                 </p>
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-5" type="checkbox"
                     name="saved-the-day" checked>
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-5">Удержал
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0"
+                    for="checkbox-5">Удержал
                     башню</label>
                 </p>
                 <p class="form__checkbox-content">
                   <input class="form__checkbox-input visually-hidden" id="checkbox-6" type="checkbox"
                     name="trashed-hotel-room">
-                  <label class="form__descr form__descr--dark form__descr--checkbox" for="checkbox-6">Разгромил
+                  <label class="form__descr form__descr--dark form__descr--checkbox" tabindex="0"
+                    for="checkbox-6">Разгромил
                     отель</label>
                 </p>
               </div>

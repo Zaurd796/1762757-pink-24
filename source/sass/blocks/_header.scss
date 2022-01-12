@@ -1,10 +1,13 @@
 .header {
-  position: absolute;
-
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
 
-  background: rgba($black, 0.3);
+  background-color: $clay;
+
+  &.header--menu-close {
+    position: absolute;
+    background: rgba($black, 0.3);
+  }
 
   &.header--menu-open {
     background: $clay;
@@ -15,7 +18,14 @@
 .header__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.header__nav {
+  width: 100%;
+
+  text-align: center;
 }
 
 @media (min-width: 660px) {
@@ -27,5 +37,10 @@
 @media (min-width: 1200px) {
   .header {
     padding: unset;
+  }
+
+  .header__nav {
+    width: initial;
+    text-align: unset;
   }
 }

@@ -61,11 +61,11 @@
               fill="#D22856" />
           </svg>
         </a>
-        <nav class="nav">
-          <button class="menu-burger" type="button">
-            <span class="visually-hidden">меню бургер</span>
-            <span class="menu-burger__bar"></span>
-          </button>
+        <button class="menu-burger" type="button">
+          <span class="visually-hidden">меню бургер</span>
+          <span class="menu-burger__bar"></span>
+        </button>
+        <nav class="header__nav">
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="index.html">Главная</a>
@@ -371,7 +371,7 @@
       <div class="upload__content-box">
         <div class="upload__inner">
           <div class="upload__img-box">
-            <div class="container">
+            <div class="container upload__container">
               <picture>
                 <source media="(min-width: 660px)" type="image/webp"
                   srcset="img/content/photo-7-tablet.webp 1x, img/content/photo-7-tablet@2x.webp 2x">
@@ -387,7 +387,7 @@
           </div>
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="upload__list-box">
-              <div class="container">
+              <div class="container upload__container">
                 <div class="upload__tabs">
                   <button class="upload__item-button upload__item-button--active" data-tab="tab-1" type="button">
                     <span class="visually-hidden">размер фото</span>
@@ -408,24 +408,27 @@
                     </svg>
                   </button>
                   <div class="upload__range-input-box upload__range-input-box--crop" id="tab-1">
-                    <input class="upload__range-input" id="size" type="range" min="0" max="10" step="1" value="9">
+                    <input class="upload__range-input" id="size" name="size" type="range" min="0" max="10" step="1"
+                      value="9">
                     <label class="visually-hidden" for="size">размер фото</label>
                   </div>
                   <div class="upload__range-input-box upload__range-input-box--hidden upload__range-input-box--fill"
                     id="tab-2">
-                    <input class="upload__range-input" id="fill" type="range" min="0" max="10" step="1" value="2">
+                    <input class="upload__range-input" id="fill" name="fill" type="range" min="0" max="10" step="1"
+                      value="2">
                     <label class="visually-hidden" for="fill">заливка фото</label>
                   </div>
                   <div class="upload__range-input-box upload__range-input-box--hidden upload__range-input-box--contrast"
                     id="tab-3">
-                    <input class="upload__range-input" id="contrast" type="range" min="0" max="10" step="1" value="5">
+                    <input class="upload__range-input" id="contrast" name="contrast" type="range" min="0" max="10"
+                      step="1" value="5">
                     <label class="visually-hidden" for="contrast">контрастность фото</label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="upload__buttons-box">
-              <div class="container">
+              <div class="container upload__container">
                 <div class="upload__wrapper">
                   <button class="upload__button upload__button--submit" type="submit">Запостить</button>
                   <button class="upload__button upload__button--cancel" type="reset">Отмена</button>

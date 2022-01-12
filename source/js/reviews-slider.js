@@ -56,29 +56,3 @@ if (document.querySelectorAll("[data-item='reviews-slide']").length) {
     });
   });
 }
-
-
-// const tableHeads = document.querySelectorAll("#table-head");
-// const priceDots = document.querySelectorAll("#price-dot");
-
-
-// let i = 0;
-
-
-// const activeItem = n => {
-//   for (tableHead of tableHeads) {
-//     tableHead.classList.remove("hidden");
-//   }
-
-//   tableHeads[n].clasList.add("hidden");
-// }
-
-// const activePriceDot = n => {
-//   for (priceDot of priceDots) {
-//     priceDot.classList.remove("slider__dot--active");
-//   }
-//   // priceDots[n].classList.add("slider__dot--active");
-// }
-
-// activeItem ();
-// activePriceDot();

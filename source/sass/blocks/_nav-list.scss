@@ -1,9 +1,13 @@
 .nav-list {
-  display: none;
+  display: block;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &.nav-list--menu-close {
+    display: none;
+  }
 
   &.nav-list--menu-open {
     position: absolute;
@@ -54,8 +58,9 @@
 }
 
 @media (min-width: 1200px) {
-  .nav-list {
+  .nav-list.nav-list--menu-close {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .nav-list__link {

@@ -15,7 +15,7 @@
 }
 
 .upload__content-box {
-  padding: 20px 0 41px;
+  padding: 20px 0 38px;
 
   background-color: $concrete-gray;
 }
@@ -49,6 +49,7 @@
 
   border: none;
   background-color: transparent;
+  vertical-align: middle;
 
   &:first-of-type {
     margin-left: -5px;
@@ -70,25 +71,6 @@
       fill-opacity: 1;
     }
   }
-
-  // код для svg вставленного не через спрайт
-  // path {
-  //   fill: $clay;
-  //   fill-opacity: 0.3;
-  // }
-
-  // &:hover {
-  //   path {
-  //     fill-opacity: 0.5;
-  //   }
-  // }
-
-  // &.upload__item-button--active {
-  //   path {
-  //     fill: $red;
-  //     fill-opacity: 1;
-  //   }
-  // }
 }
 
 .upload__item-button-icon {
@@ -238,10 +220,10 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+  }
 
-    .container {
-      padding: 0;
-    }
+  .upload__container {
+    padding: 0;
   }
 
   .upload__img-box {

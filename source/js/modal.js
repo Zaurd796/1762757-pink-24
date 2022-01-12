@@ -1,6 +1,5 @@
 if (document.querySelector(".form")) {
   const form = document.querySelector(".form");
-// const input = form.querySelectorAll("[required]");
   const input = form.querySelectorAll("[data-required]");
   console.log(input);
   const modalError = document.querySelector(".form-modal--error");
@@ -11,9 +10,6 @@ if (document.querySelector(".form")) {
   form.addEventListener("submit", function(evt) {
     evt.preventDefault();
     input.forEach(function(item) {
-      // if(item.value === "") {
-      //   console.log("empty");
-      // }
       if (item.value === "") {
         modalError.classList.add("form-modal--open");
         item.style.boxShadow = "0 0 10px red";

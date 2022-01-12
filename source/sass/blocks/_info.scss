@@ -103,17 +103,10 @@
 .info__diagram-img {
   position: relative;
 
-  padding-top: 70px;
-  padding-left: 31px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-
   background: $white;
 
   &::before {
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: block;
 
     width: 238px;
     height: 276px;
@@ -121,22 +114,6 @@
     background: url("../img/timer.svg") no-repeat;
     content: "";
   }
-}
-
-.info__diagram-img-descr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 176px;
-  height: 176px;
-
-  font-weight: bold;
-  font-size: 96px;
-  line-height: 163px;
-  color: $red;
-
-  border: 16px solid $red;
-  border-radius: 50%;
 }
 
 .info__diagram-content {
@@ -203,7 +180,11 @@
     margin-bottom: 102px;
 
     &::before {
-      display: none;
+      top: 194px;
+
+      height: 485px;
+
+      clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
     }
   }
 
@@ -295,7 +276,7 @@
 
 @media (min-width: 1200px) {
   .info {
-    margin-bottom: 73px;
+    margin-bottom: 66px;
     padding-bottom: 73px;
 
     &::before {
@@ -415,30 +396,16 @@
   }
 
   .info__diagram-img {
-    padding-top: 86px;
-    padding-left: 40px;
-    margin-right: 79px;
+    margin-right: 75px;
 
     background: unset;
 
     &::before {
-      top: 0;
-      left: 0;
-
       width: 298px;
       height: 345px;
 
       background: url("../img/timer-desctop.svg") no-repeat;
     }
-  }
-
-  .info__diagram-img-descr {
-    width: 221px;
-    height: 221px;
-
-    font-size: 120px;
-
-    border-width: 18px;
   }
 
   .info__diagram-content {
