@@ -43,6 +43,12 @@
   }
 }
 
+@media (min-width: 660px) {
+  .slider__dots--price {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .slider__dots {
     display: none;

@@ -38,6 +38,10 @@
 
 @media (min-width: 1200px) {
   .header {
-    padding: unset;
+    padding: 40px 0 43px;
+  }
+
+  .header__row {
+    flex-wrap: nowrap;
   }
 }

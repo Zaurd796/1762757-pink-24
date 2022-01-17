@@ -8,7 +8,7 @@
     z-index: -1;
 
     width: 100%;
-    height: 788px;
+    height: calc(100% - 214px);
 
     background-color: $concrete-gray;
     clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
@@ -151,38 +151,15 @@
   }
 }
 
-@media (min-width: 360px) {
-  .info {
-    &::before {
-      height: 764px;
-    }
-  }
-}
-
-@media (min-width: 390px) {
-  .info {
-    &::before {
-      height: 741px;
-    }
-  }
-}
-
-@media (min-width: 396px) {
-  .info {
-    &::before {
-      height: 689px;
-    }
-  }
-}
-
 @media (min-width: 660px) {
   .info {
     margin-bottom: 102px;
 
     &::before {
+
       top: 194px;
 
-      height: 485px;
+      height: calc(100% - 520px);
 
       clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
     }
@@ -283,7 +260,7 @@
       top: 253px;
 
       display: initial;
-      height: 1045px;
+      height: calc(100% - 260px);
 
       clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }

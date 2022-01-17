@@ -3,10 +3,11 @@
 @import "global/var";
 @import "global/fonts";
 @import "global/global";
+@import "global/visually-hidden";
+@import "global/hidden";
 
 // components
 
-@import "blocks/visually-hidden";
 @import "blocks/container";
 @import "blocks/logo";
 @import "blocks/menu-burger";

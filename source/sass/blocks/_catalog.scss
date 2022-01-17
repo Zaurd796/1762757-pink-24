@@ -160,6 +160,10 @@
     display: unset;
   }
 
+  .catalog__blockquote {
+    height: 100%;
+  }
+
   .catalog__blockquote--top {
     margin-bottom: 50px;
   }
@@ -182,6 +186,7 @@
     }
 
     &--bottom {
+      height: calc(100% - 300px);
       min-height: 155px;
     }
   }
@@ -232,6 +237,8 @@
 
   .catalog__item {
     margin-bottom: 0;
+
+    background-color: $concrete-gray;
   }
 
   .catalog__item-img {
@@ -268,5 +275,9 @@
 
   .catalog__blockquote-content {
     padding: 18px 30px 24px 28px;
+
+    &--bottom {
+      height: calc(100% - 400px);
+    }
   }
 }

@@ -2,19 +2,26 @@
   display: inline-block;
 }
 
+.logo--header:hover path {
+  fill: $red;
+}
+
+.logo--header:active path {
+  fill: $white;
+  opacity: 0.3;
+}
+
 .logo--header {
   &:hover {
     .logo__image-header-mobile,
-    .logo__image-header-tablet,
-    .logo__image-header-desctop path {
+    .logo__image-header-tablet {
       fill: $red;
     }
   }
 
   &:active {
     .logo__image-header-mobile,
-    .logo__image-header-tablet,
-    .logo__image-header-desctop path {
+    .logo__image-header-tablet {
       fill: $white;
       opacity: 0.3;
     }
@@ -44,27 +51,22 @@
   margin-bottom: 41px;
 
   &:hover {
-    .logo__image-footer-mobile path,
-    .logo__image-footer-desctop path {
+    path {
       fill: $red;
     }
   }
 
   &:active {
-    .logo__image-footer-mobile path {
+    path {
       opacity: 0.3;
     }
 
-    .logo__image-footer-mobile .logo__image-footer-mobile--words {
+    .logo__image-footer-mobile--words {
       fill: $clay;
     }
 
-    .logo__image-footer-desctop path {
-      opacity: 0.3;
-    }
-
-    .logo__image-footer-desctop .logo__image-footer-desctop--words,
-    .logo__image-footer-desctop .logo__image-footer-desctop--stars {
+    .logo__image-footer-desctop--words,
+    .logo__image-footer-desctop--stars {
       fill: $clay;
     }
   }
@@ -92,10 +94,6 @@
     margin-bottom: 0;
     margin-top: -27px;
     margin-right: -30px;
-  }
-
-  .footer__link-box {
-    margin-top: -17px;
   }
 }
 

@@ -87,7 +87,7 @@
     position: relative;
 
     display: inline-block;
-    padding: 46px 40px 49px;
+    padding: 0 40px;
 
     &--last-child {
       padding-right: 0;
@@ -102,7 +102,7 @@
     &.nav-list__link--active {
       &::before {
         position: absolute;
-        bottom: 36px;
+        bottom: -12px;
         left: 39px;
         right: 39px;
 

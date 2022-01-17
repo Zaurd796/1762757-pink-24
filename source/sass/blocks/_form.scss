@@ -2,7 +2,7 @@
   padding-bottom: 23px;
 }
 
-.form__container {
+.form__inner {
   display: flex;
   flex-direction: column;
 }
@@ -107,7 +107,10 @@
   }
 
   &--achievments {
+    display: block;
     max-width: 223px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 37px;
 
     text-align: center;
@@ -115,6 +118,10 @@
   }
 
   &--review {
+    display: block;
+    max-width: 188px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 12px;
 
     text-align: center;
@@ -420,6 +427,10 @@
     }
 
     &--apps {
+      display: block;
+      max-width: 368px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 41px;
       padding: 0 25px;
 
@@ -427,7 +438,10 @@
     }
 
     &--info {
-      display: unset;
+      display: block;
+      max-width: 248px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 31px;
       padding: 0 25px;
 
@@ -455,6 +469,7 @@
     }
 
     &--review {
+      max-width: unset;
       margin-bottom: 28px;
       padding: 0 42px;
     }
@@ -531,15 +546,15 @@
 @media (min-width: 1200px) {
   .form {
     padding-bottom: 0;
-
-    .container {
-      max-width: unset;
-      padding: unset;
-      margin: unset;
-    }
   }
 
   .form__container {
+    max-width: unset;
+    padding: unset;
+    margin: unset;
+  }
+
+  .form__inner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
